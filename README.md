@@ -11,7 +11,7 @@ Ce cycle de formations comporte 10 volets:
 - Formation E. Evaluation bilan. Fiche et présentation.
 - Formation Fa. Outils de gestion des données : aspects techniques. Fiche et présentation.
 - Formation Fb. Outils de gestion des données : aspects droits d’usage. Fiche et présentation.
-- Formation G. OUtils d'analyse des données. Fiche et présentation.
+- Formation G. Outils d'analyse des données. Fiche et présentation.
 - Formation H. Règles et droits d’usage collectifs. Fiche et présentation.
 
 ## Licence et citation
