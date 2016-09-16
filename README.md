@@ -3,16 +3,16 @@
 ## Le cycle de formations
 Ce cycle de formations comporte 10 volets:
 
-- Cycle_formations. Présentation du cycle de formations. Fiche.
-- Formation A. Sélection décentralisée et collaborative en réseau. Fiche et présentation.
-- Formation B. Gestion, mobilisation et brassage de la diversité. Fiche et présentation.
-- Formation C. Evaluation et sélection agronomique. Fiche et présentation.
-- Formation D. Evaluation et sélection organoleptique. Fiche et présentation.
-- Formation E. Evaluation bilan. Fiche et présentation.
-- Formation Fa. Outils de gestion des données : aspects techniques. Fiche et présentation.
-- Formation Fb. Outils de gestion des données : aspects droits d’usage. Fiche et présentation.
-- Formation G. Outils d'analyse des données. Fiche et présentation.
-- Formation H. Règles et droits d’usage collectifs. Fiche et présentation.
+1. Cycle_formations. Présentation du cycle de formations. Fiche.
+2. Formation A. Sélection décentralisée et collaborative en réseau. Fiche et présentation.
+3. Formation B. Gestion, mobilisation et brassage de la diversité. Fiche et présentation.
+4. Formation C. Evaluation et sélection agronomique. Fiche et présentation.
+5. Formation D. Evaluation et sélection organoleptique. Fiche et présentation.
+6. Formation E. Evaluation bilan. Fiche et présentation.
+7. Formation Fa. Outils de gestion des données : aspects techniques. Fiche et présentation.
+8. Formation Fb. Outils de gestion des données : aspects droits d’usage. Fiche et présentation.
+9. Formation G. Outils d'analyse des données. Fiche et présentation.
+10. Formation H. Règles et droits d’usage collectifs. Fiche et présentation.
 
 ## Licence et citation
 Tous les documents pdf et les codes tex (qui ont permis de générer les pdf avec LaTeX) sont sous lience creative commons BY-NC-SA. 
