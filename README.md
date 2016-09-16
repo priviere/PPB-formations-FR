@@ -1,3 +1,5 @@
+Everything is in french. A translation in english will be done when a first version is ready.
+
 # Cycle de formations sur la gestion dynamique de la biodiversité cultivée dans les Maisons des Semences Paysannes en réseau
 
 ## Le cycle de formations
