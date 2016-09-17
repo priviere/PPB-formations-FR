@@ -23,7 +23,7 @@ Plus d’informations [ici](http://creativecommons.org/licenses/by-nc-sa/4.0/dee
 
 La manière de citer les documents est indiquée au début des fiches et à la fin des présentations.
 
-La manière de citer les codes est indiquée au début des fichiers tex.
+La manière de citer les codes est indiquée dans le fichier LICENCE présent dans chaque dossier.
 
 ## Télécharger les documents
 ### Les .pdf
