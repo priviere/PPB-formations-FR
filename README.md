@@ -27,14 +27,14 @@ La manière de citer les codes est indiquée au début des fichiers tex.
 
 ## Télécharger les documents
 ### Les .pdf
-Les pdf sont disponibles en téléchargement [ici](afaire).
+Les pdf sont disponibles en téléchargement [ici](https://www.dropbox.com/sh/ijbjiyfofpqugxm/AAD8u7t4B2BYunnU44FOlUcla?dl=0).
 
 
 ### Les figures
-Les figures utilisées dans les pdf sont disponibles en téléchargement au format odp, pdf ou png [ici](afaire).
+Les figures utilisées dans les pdf sont disponibles en téléchargement au format odp, pdf ou png [ici](https://www.dropbox.com/sh/sa23b3psd5nypcc/AADDpe_eBtKcvxcjoMYMlPiAa?dl=0).
 Les conditions d'utilisation (licence et citation) de ces figures sont dans le fichier figures_licences.txt.
 
 
 ### Les .tex
-Les fichiers tex sont disponibles en téléchargement [ici](afaire).
+Les fichiers tex sont disponibles en téléchargement [ici](https://github.com/priviere/PPB_formations_FR).
 
