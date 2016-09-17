@@ -30,9 +30,9 @@ La manière de citer les codes est indiquée au début des fichiers tex.
 Les pdf sont disponibles en téléchargement [ici](https://www.dropbox.com/sh/ijbjiyfofpqugxm/AAD8u7t4B2BYunnU44FOlUcla?dl=0).
 
 
-### Les figures
-Les figures utilisées dans les pdf sont disponibles en téléchargement au format odp, pdf ou png [ici](https://www.dropbox.com/sh/sa23b3psd5nypcc/AADDpe_eBtKcvxcjoMYMlPiAa?dl=0).
-Les conditions d'utilisation (licence et citation) de ces figures sont dans le fichier figures_licences.txt.
+### Les images, les figures et les photos
+Les images, les figures et les photos utilisées dans les pdf sont disponibles en téléchargement au format odp, pdf ou png [ici](https://www.dropbox.com/sh/sa23b3psd5nypcc/AADDpe_eBtKcvxcjoMYMlPiAa?dl=0).
+Les conditions d'utilisation (licence et citation) de ces figures sont dans le fichier photos_images_figures_fiche.pdf en téléchargement [ici](https://www.dropbox.com/s/980hwbgm566skbt/photos_images_figures_fiche.pdf?dl=0)
 
 
 ### Les .tex
