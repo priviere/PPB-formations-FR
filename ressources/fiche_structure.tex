@@ -1,0 +1,242 @@
+% Copyright Réseau Semences Paysannes.
+
+% Ce code est sous licence creative commons BY-NC-SA. Vous êtes autorisé à partager et à
+% adapter son contenu tant que vous citez les auteurs de ce document et indiquez si des changements
+% ont eu lieu, que vous ne faites pas un usage commercial de ce code, tout ou partie du matériel
+% le composant, que vous partagez dans les mêmes conditions votre code issu de ce code.
+
+% Pour citer ce code: Cycle de formations sur la gestion dynamique de la biodiversité
+% cultivée dans les Maisons des Semences Paysannes en réseau. Code tex de la structure des fiches. Réseau Semences Paysannes.
+% Version 1 du 15 janvier 2106. Licence CC BY NC SA.
+
+\documentclass[12pt]{book}
+
+\usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry} % gérer les marges
+
+\usepackage{titlesec} % Allows customization of titles
+\usepackage[titletoc]{appendix} % To add Appendix into annex section number i.e. Appendix A
+
+% citations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[a4paper=true, colorlinks=true, linkcolor=black,urlcolor=blue, citecolor=black]{hyperref}
+%\usepackage[authoryear,round,colon]{natbib}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{../../ressources/biblio}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% pour intégrer les instruction pour SHiNeMaS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\BDinput}[1]{
+\setlength{\fboxrule}{.2mm}
+\noindent
+\fcolorbox{black}{black}{\makebox[\textwidth][c]{\textcolor{white}{$-$ Protocole \BD ~$-$}}} \\
+\fcolorbox{black}{white}{
+\begin{minipage}[]{\textwidth}
+#1
+\end{minipage}
+}}
+
+\newcommand{\Rinput}[1]{
+\setlength{\fboxrule}{.2mm}
+\noindent
+\fcolorbox{black}{black}{\makebox[\textwidth][c]{\textcolor{white}{$-$ Code \R ~$-$}}} \\
+\fcolorbox{black}{white}{\makebox[\textwidth][l]{#1}}
+}
+
+
+\newcommand{\Routput}[1]{
+\setlength{\fboxrule}{.2mm}
+\noindent
+\fcolorbox{black}{black}{\makebox[\textwidth][c]{\textcolor{white}{$-$ Sorties ~$-$}}} \\
+\fcolorbox{black}{white}{\makebox[\textwidth][l]{#1}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Boites à messages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% couleurs
+\newcommand{\colwarning}{red}
+\newcommand{\colloi}{blue}
+\newcommand{\colinfosup}{orange}
+
+% les remarques
+\setlength{\fboxrule}{1mm}
+
+\newcommand{\RQ}[1]{
+~\\
+\begin{center}
+\fbox{
+\begin{minipage}[]{.7\textwidth}
+\textcolor{red}{\textbf{{#1}}}
+\end{minipage}
+}
+\end{center}
+}
+
+% les warnings
+\newcommand{\warning}[1]{
+\setlength{\fboxrule}{1.5mm}\noindent
+\begin{minipage}[t]{.1\textwidth}
+\parbox[c]{\textwidth}{\includegraphics[width=\textwidth]{warning}}
+\end{minipage}
+\fcolorbox{\colwarning}{white}{
+\begin{minipage}[t]{.85\textwidth}
+\textcolor{\colwarning}{\textbf{{#1}}}
+\end{minipage}
+}~\\
+}
+
+% les infos sur les textes de loi
+\newcommand{\loi}[1]{
+\setlength{\fboxrule}{1.5mm}\noindent
+\begin{minipage}[t]{.1\textwidth}
+\parbox[c]{\textwidth}{\includegraphics[width=\textwidth]{semences_code_barre}}
+\end{minipage}
+\fcolorbox{\colloi}{white}{
+\begin{minipage}[t]{.85\textwidth}
+\textcolor{\colloi}{\textbf{{#1}}}
+\end{minipage}
+}~\\
+}
+
+% pour aller plus loin
+\newcommand{\infosup}[1]{
+\setlength{\fboxrule}{1.5mm}\noindent
+\begin{minipage}[t]{.1\textwidth}
+\parbox[c]{\textwidth}{\includegraphics[width=\textwidth]{livre}}
+\end{minipage}
+\fcolorbox{\colinfosup}{white}{
+\begin{minipage}[t]{.85\textwidth}
+\textcolor{\colinfosup}{\textbf{{#1}}}
+\end{minipage}
+}~\\
+}
+
+
+
+
+
+
+
+% impossible de mettre du verbatim dans une fonction, j'ai pas mal cherché !!!
+\newcommand{\TOTO}[3]{
+\begin{table}[H]
+\begin{tabular}{|p{.5\textwidth} | p{.5\textwidth}|}
+\hline
+\multicolumn{1}{|c|}{\cellcolor{black} \textcolor{white}{$-$ Interface \BD ~$-$}}
+&
+\multicolumn{1}{|c|}{\cellcolor{white} \textcolor{black}{$-$ Code \R ~$-$}}
+\\
+\hline
+#1
+&
+#2
+\\
+\hline
+\multicolumn{2}{|c|}{\cellcolor{gray} \textcolor{white}{$-$ Sorties ~$-$}} \\
+\hline
+\multicolumn{2}{|l|}{ #3 } \\
+\hline
+\end{tabular}
+\end{table}
+}
+
+% custom color of toc
+
+
+%\titlecontents{section}[1.5cm]
+%{\bfseries\color{mln-green}}
+%{\contentslabel{1cm}}
+%{0cm}
+%{}
+
+%
+%\titlecontents{subsection}[2.5cm]
+%{\color{mln-brown}\bfseries}
+%{\color{mln-brown}\contentslabel{1.3cm}}
+%{}
+%{\color{mln-brown}\titlerule*{}\contentspage}
+%
+%
+%\titlecontents{subsubsection}[3.5cm]
+%{\color{gray}\bfseries}
+%{\color{gray}\contentslabel{1.7cm}}
+%{}
+%{\color{gray}\titlerule*{}\contentspage}
+%
+
+\titleformat{\chapter}[hang]{\normalfont\Large\bfseries\color{mln-green}}{\thechapter}{0pt}{~}[~]
+\titleformat{\section}[hang]{\normalfont\Large\bfseries\color{mln-green}}{\thesection.~}{0pt}{}[]
+\titleformat{\subsection}[hang]{\normalfont\large\bfseries\color{mln-brown}}{\hspace{0.8cm}\thesubsection.~}{0pt}{}[]
+\titleformat{\subsubsection}[hang]{\normalfont\normalsize\bfseries\color{gray}}{\hspace{1.9cm}\thesubsubsection.~}{0pt}{}[]
+\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries\color{gray}}{}{0pt}{}[]
+\titleformat{\subparagraph}[hang]{\normalfont\normalsize\bfseries\color{gray}}{}{0pt}{}[]
+
+\newcommand{\logoITABMIARSPDEAP}{
+\includegraphics[width=0.15\textwidth]{Logo-ITAB}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-maiage}
+\hspace{1cm}
+\includegraphics[height=0.15\textwidth]{Logo-RSP}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-UMRGV}
+}
+
+
+\newcommand{\logoITABRSPDEAP}{
+\includegraphics[width=0.15\textwidth]{Logo-ITAB}
+\hspace{1cm}
+\includegraphics[height=0.15\textwidth]{Logo-RSP}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-UMRGV}
+}
+
+\newcommand{\logoMIARSPDEAP}{
+\includegraphics[width=0.15\textwidth]{Logo-maiage}
+\hspace{1cm}
+\includegraphics[height=0.15\textwidth]{Logo-RSP}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-UMRGV}
+}
+
+\newcommand{\logoRSPDEAP}{
+\includegraphics[height=0.15\textwidth]{Logo-RSP.jpg}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-UMRGV.jpg}
+}
+
+\newcommand{\logoRSP}{
+\includegraphics[height=0.15\textwidth]{Logo-RSP.jpg}
+}
+
+\newcommand{\headtitlepagefiche}[2]{
+
+{#1}
+
+\vfill
+
+\colorbox{mln-green}{
+\begin{minipage}{\textwidth}
+\color{white}
+\sffamily\centering\LARGE
+\vspace{.4cm}
+\titre \\ {#2}
+\vspace{.4cm}
+\end{minipage}
+}
+
+\vfill
+
+}
+
+

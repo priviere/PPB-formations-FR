@@ -1,0 +1,196 @@
+% Copyright Réseau Semences Paysannes.
+
+% Ce code est sous licence creative commons BY-NC-SA. Vous êtes autorisé à partager et à
+% adapter son contenu tant que vous citez les auteurs de ce document et indiquez si des changements
+% ont eu lieu, que vous ne faites pas un usage commercial de ce code, tout ou partie du matériel
+% le composant, que vous partagez dans les mêmes conditions votre code issu de ce code.
+
+% Pour citer ce code: Cycle de formations sur la gestion dynamique de la biodiversité
+% cultivée dans les Maisons des Semences Paysannes en réseau. Code tex de la strucutre commune des fiches et des présentations. Réseau Semences Paysannes.
+% Version 1 du 15 janvier 2106. Licence CC BY NC SA.
+
+% FR %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[utf8]{inputenc}
+\usepackage[francais]{babel}
+\usepackage[cyr]{aeguill}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+% policepar défaut : Computer Modern sans serif
+% http://mcclinews.free.fr/latex/introbeamer/elements_contenu.html
+% http://deic.uab.es/~iblanes/beamer_gallery/
+% http://mcclinews.free.fr/latex/introbeamer/elements_diaporama.html#toc6
+% \Huge (géant)
+% \huge (énorme)
+% \LARGE (très grand)
+% \Large (plus grand)
+% \large (grand)
+% \normalsize (normal)
+% \small (petit)
+% \footnotesize (assez petit)
+% \scriptsize (très petit)
+% \tiny (minuscule)
+
+% Maths %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}
+\setcounter{MaxMatrixCols}{50}
+
+% graphs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{float} % [H] dans figure et ça bouge pas!
+\usepackage{graphicx}
+\usepackage{tikz} % pour dessiner sur des figures
+\usepackage{pstricks} % pour dessiner sur des figures
+
+\usetikzlibrary{shapes,arrows}
+
+\usepackage{wasysym} % pour faire des smileys
+\usepackage{pict2e} % pour faire des dessins
+\setlength{\unitlength}{1mm} % pour faire des dessins, valeur de référence : 1mm
+\usepackage{pdfpages} % pour rentrer des page.pdf
+
+
+% tableaux %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{lscape}
+\usepackage{supertabular}
+
+% couleurs %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{colortbl}
+\usepackage{xcolor}
+\definecolor{mln-green}{RGB}{13,109,35}
+\definecolor{mln-brown}{RGB}{141,162,69}
+\definecolor{jaune}{RGB}{255,255,0}
+\definecolor{rose}{RGB}{255,0,255}
+\definecolor{marron}{RGB}{136,127,0}
+\definecolor{bleu}{RGB}{0,255,255}
+\definecolor{vert}{RGB}{0,255,0}
+
+% autres
+\usepackage{multicol}
+\usepackage{titletoc}
+
+% conditions pour les différentes espèces
+\newif\ifcereales
+\newif\iftomates
+\newif\ifmais
+
+% raccourcis %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand\guill[1]{\og #1 \fg}
+\renewcommand{\thefootnote}{\roman{footnote}} % pour ne pas confondre avec les notes de bas de page
+\newcommand{\BDD}{\texttt{SHiNeMaS}}
+\newcommand{\BDDfull}{\texttt{Seed History and Network Management System}}
+\newcommand{\R}{\texttt{R}}
+\newcommand{\RG}{ressources génétiques}
+\newcommand{\agec}{agroécologie}
+\newcommand{\SP}{sélection collaborative}
+\newcommand{\FR}{fermes régionales}
+\newcommand{\FS}{fermes satellites}
+\newcommand{\CRB}{Centre de Ressources Biologiques}
+\newcommand{\CRBs}{Centres de Ressources Biologiques}
+\newcommand{\MSP}{Maison des Semences Paysannes}
+\newcommand{\MSPs}{Maisons des Semences Paysannes}
+\newcommand{\RSP}{Réseau Semences Paysannes}
+\newcommand{\INRA}{Institut National de la Recherche Agronomique}
+\newcommand{\ITAB}{Institut Technique de l'Agriculture Biologique}
+\newcommand{\exsitu}{\textit{ex-situ}}
+\newcommand{\insitu}{\textit{in-situ}}
+\newcommand{\COV}{Certificat d'Obtention Végétal}
+\newcommand{\yo}[1]{\textbf{\color{mln-green}#1}}
+
+
+
+% Titre commun à toutes les fiches et présentation
+\newcommand{\titre}{\textbf{La gestion dynamique de la biodiversité cultivée dans les \MSPs~en réseau}}
+
+
+% Noms des formations
+\newcommand{\formationA}{Formation A. Sélection décentralisée et collaborative en réseau}
+\newcommand{\descriptifFA}{
+Cette formation présente les grandes lignes de la méthodologie des programmes de sélection dynamique et récurrente dans les \MSPs en réseau. 
+
+Elle vise à donner les bases, sans rentrer dans les détails, de grands axes qui pourront être approfondis lors de formations spécifiques. 
+La formation prendra comme exemple un programme sur le blé tendre. %, la tomate, le mais ou le châtaignier. 
+
+Points abordés lors de la journée :
+\begin{itemize}
+\item Les céréales (généalogie, évolution, contexte historique)
+\item Mobilisation et le brassage de la biodiversité cultivée
+
+\item Evaluation et sélection
+\begin{itemize}
+\item Evaluation et sélection agrononomique
+\begin{itemize}
+\item principes de génétique quantitative et des populations pour mieux comprendre comment
+il est possible de sélectionner au niveau agronomique
+\item sélection décentralisée et participative en réseau
+\end{itemize}
+\item Evaluation et sélection organoleptique et nutritionelle
+\end{itemize} 
+
+\item Production
+
+\item Mise en réseau des acteurs
+
+\item Evaluation du programme et les premiers résultats
+
+\item Règles et droits d’usage collectifs
+\end{itemize}
+
+Une visite dans les champs ou dans une ferme pourra permettre de faire une petite pause après le
+repas.
+
+Un temps de discussion sera prévu à la fin de la journée afin de réfléchir ensemble à la mise en
+place d’un programme de sélection collaborative.
+}
+
+\newcommand{\formationB}{Formation B. Gestion, mobilisation et brassage de la diversité}
+\newcommand{\descriptifFB}{
+Cette formation approfondit les méthodes et les techniques pour gérer, mobiliser et brasser la biodiversité cultivée du blé tendre à la ferme.
+Une première partie fait l'état des lieux des méthodes et des techniques en lien avec les dernières 
+publications sur le sujet.
+Une deuxième partie pratique permettra de réaliser ses propres croisements.
+}
+
+\newcommand{\formationC}{Formation C. Evaluation et sélection agronomique}
+\newcommand{\descriptifFC}{
+En cours de rédaction
+}
+
+\newcommand{\formationD}{Formation D. Evaluation et sélection organoleptique}
+\newcommand{\descriptifFD}{
+En cours de rédaction
+}
+
+\newcommand{\formationE}{Formation E. Evaluation bilan}
+\newcommand{\descriptifFE}{
+En cours de rédaction
+}
+
+\newcommand{\formationFa}{Formation Fa. Outils de gestion des données: aspects techniques}
+\newcommand{\descriptifFFa}{
+En cours de rédaction
+%Cette formation permet de maitriser au niveau technique la base de données \BDD~(\BDDfull).
+%Des tutoriels sont proposés sur différentes espèces (céréales, maïs, tomates, oignons, fourragères, arbres).
+%Un temps de tests sur les ordinateurs important est prévu.
+%Les aspects d'accès à l'information et d'organisation d'un réseau de base de données est traité.
+%Les notions de règles et de droits d'usage sont abordés en perspectives.
+}
+
+\newcommand{\formationFb}{Formation Fb. Outils de gestion des données: aspects règles et droits d'usage}
+\newcommand{\descriptifFFb}{
+En cours de rédaction
+%Cette formation présente les règles et droits d'usage liés aux données eu égard de l'organisation d'un collectif et des risques de biopiraterie.
+%Une première partie présente les méthodes et les outils utilisés dans les programmes de sélection.
+%Ensuite, les risques de biopiraterie associés aux données est abordé.
+%Enfin des éléments sont données pour se poser des questions au sein d'un collectif eu égard de la gestion des données. 
+%Un temps important de travail de groupe est prévu.
+}
+
+\newcommand{\formationG}{Formation G. Outils d'analyse des données}
+\newcommand{\descriptifFG}{
+En cours de rédaction
+}
+
+\newcommand{\formationH}{Formation H. Règles et droits d'usage collectifs}
+\newcommand{\descriptifFH}{
+En cours de rédaction
+}
+

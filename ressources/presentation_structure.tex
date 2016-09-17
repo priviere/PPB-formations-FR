@@ -1,0 +1,63 @@
+% Copyright Réseau Semences Paysannes.
+
+% Ce code est sous licence creative commons BY-NC-SA. Vous êtes autorisé à partager et à
+% adapter son contenu tant que vous citez les auteurs de ce document et indiquez si des changements
+% ont eu lieu, que vous ne faites pas un usage commercial de ce code, tout ou partie du matériel
+% le composant, que vous partagez dans les mêmes conditions votre code issu de ce code.
+
+% Pour citer ce code: Cycle de formations sur la gestion dynamique de la biodiversité
+% cultivée dans les Maisons des Semences Paysannes en réseau. Code tex de structure des présentations. Réseau Semences Paysannes.
+% Version 1 du 15 janvier 2106. Licence CC BY NC SA.
+
+\documentclass{beamer}
+
+% Le look
+\usetheme{CambridgeUS} % Un thème sympa mais il y en a plein d'autres ...
+
+
+%\definecolor{beamer@blendedblue}{rgb}{0.5,0.5,0.3} % changed this
+
+%\setbeamercolor{normal text}{fg=black,bg=white}
+%\setbeamercolor{alerted text}{fg=red}
+%\setbeamercolor{example text}{fg=green!50!black}
+
+%\setbeamercolor{structure}{fg=beamer@blendedblue}
+
+%\setbeamercolor{background canvas}{parent=normal text}
+%\setbeamercolor{background}{parent=background canvas}
+
+%\setbeamercolor{palette primary}{fg=white,bg=green} % changed this
+%\setbeamercolor{palette secondary}{use=structure,fg=structure.fg!100!green} % changed this
+%\setbeamercolor{palette tertiary}{use=structure,fg=structure.fg!100!green} % changed this
+
+% Gestion des couleurs de l'environnement
+\setbeamercolor{palette primary}{fg=white,bg=mln-brown}
+\setbeamercolor{palette secondary}{fg=black,bg=white}
+\setbeamercolor{palette tertiary}{fg=white,bg=mln-green}
+
+% Gestion du titre
+\setbeamercolor{title}{fg=white,bg=mln-green}
+
+% Gestion des titres dans chaque frame
+\setbeamercolor{frametitle}{fg=mln-green,bg=white}
+\setbeamercolor{framesubtitle}{fg=mln-brown,bg=white}
+
+% Gestion des item
+\setbeamertemplate{itemize item}[ball] % default, triangle, circle, square, ball.
+\setbeamercolor{item projected}{bg=mln-brown}
+
+% Gestion des boites
+\setbeamertemplate{blocks}[rounded][shadow=true]
+\setbeamercolor{block title}{fg=white,bg=mln-brown}
+\setbeamercolor{block body}{fg=white,bg=mln-green}
+
+% Gestion de la table des matières
+\setbeamercolor{section number projected}{bg=mln-green,fg=white}
+\setbeamercolor{subsection number projected}{bg=mln-brown,fg=white}
+
+
+% citations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{hyperref}
+\usepackage[sorting=none]{biblatex}
+\addbibresource{../../ressources/biblio}
+
