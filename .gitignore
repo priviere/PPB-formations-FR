@@ -7,6 +7,8 @@
 *.xml
 *.gz
 *.bib
+*.toc
+*.ptc
 .Rproj.user
 .Rhistory
 .RData
