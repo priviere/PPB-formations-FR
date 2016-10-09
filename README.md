@@ -12,21 +12,21 @@ Plus d’informations [ici](http://creativecommons.org/licenses/by-nc-sa/4.0/dee
 ## Le cycle de formations
 
 - Ce cycle de formations comporte 10 volets. 
-Chaque fiche de ces volets représente un chapitre du document complet.
+Chaque fiche de ces volets représente un chapitre du document complet téléchargerable en pdf [ici](https://www.dropbox.com/s/4w1r9tmbc7lubsl/cycle_formations.pdf?dl=0).
 Les présentations sont des documents indépendants.
 
 Titre | Fiche | Présentation 
 --- | --- | --- | ---
-Présentation du cycle de formations | [tex]() / [pdf]() 
-Formation A. Sélection décentralisée et collaborative en réseau | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation B. Gestion, mobilisation et brassage de la diversité  | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation C. Evaluation et sélection agronomique  | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation D. Evaluation et sélection organoleptique  | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation E. Evaluation bilan  | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation Fa. Outils de gestion des données : aspects techniques  | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation Fb. Outils de gestion des données : aspects règles d’usage  | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation G. Outils d'analyse des données  | [tex]() / [pdf]() | [tex]() / [pdf]()
-Formation H. Règles et droits d’usage collectifs  | [tex]() / [pdf]() | [tex]() / [pdf]()
+Présentation du cycle de formations | [tex]() 
+Formation A. Sélection décentralisée et collaborative en réseau | [tex]() | [tex]() / [pdf]()
+Formation B. Gestion, mobilisation et brassage de la diversité  | [tex]() | [tex]() / [pdf]()
+Formation C. Evaluation et sélection agronomique  | [tex]() | [tex]() / [pdf]()
+Formation D. Evaluation et sélection organoleptique  | [tex]() | [tex]() / [pdf]()
+Formation E. Evaluation bilan  | [tex]() | [tex]() / [pdf]()
+Formation Fa. Outils de gestion des données : aspects techniques  | [tex]() | [tex]() / [pdf]()
+Formation Fb. Outils de gestion des données : aspects règles d’usage  | [tex]() | [tex]() / [pdf]()
+Formation G. Outils d'analyse des données  | [tex]() | [tex]() / [pdf]()
+Formation H. Règles et droits d’usage collectifs  | [tex]() | [tex]() / [pdf]()
 
 
 - Les images, les figures et les photos utilisées dans les pdf sont disponibles en téléchargement au format odp, pdf ou png [ici](https://www.dropbox.com/sh/sa23b3psd5nypcc/AADDpe_eBtKcvxcjoMYMlPiAa?dl=0).
