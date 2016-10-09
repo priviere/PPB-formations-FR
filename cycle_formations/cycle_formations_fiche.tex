@@ -1,0 +1,545 @@
+% Copyright Réseau Semences Paysannes.
+
+% Ce code est sous licence creative commons BY-NC-SA. Vous êtes autorisé à partager et à
+% adapter son contenu tant que vous citez les auteurs de ce document et indiquez si des changements
+% ont eu lieu, que vous ne faites pas un usage commercial de ce code, tout ou partie du matériel
+% le composant, que vous partagez dans les mêmes conditions votre code issu de ce code.
+
+% Pour citer ce code: Cycle de formations sur la gestion dynamique de la biodiversité
+% cultivée dans les Maisons des Semences Paysannes en réseau. Code tex de la fiche technique de la Formation 1. Sélection décentralisée et collaborative en réseau. Réseau Semences Paysannes.
+% Version 1 du 15 janvier 2106. Licence CC BY NC SA.
+
+\input{../ressources/fiche_structure.tex}
+\input{../ressources/common_structure.tex}
+\input{../ressources/licence.tex}
+\graphicspath{{../ressources/figures/}}
+\input{../cycle_formations/versionCF.tex}
+\input{../formation_A/versionFA.tex}
+\input{../formation_B/versionFB.tex}
+
+%\input{../../formation_C/version.tex}
+%\input{../../formation_D/version.tex}
+%\input{../../formation_E/version.tex}
+%\input{../../formation_Fa/version.tex}
+%\input{../../formation_Fb/version.tex}
+%\input{../../formation_F/version.tex}
+%\input{../../formation_G/version.tex}
+
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{center}
+
+\headtitlepagefiche{\logoITABMIARSPDEAP}{Cycle de formations} 
+
+\vfill
+
+\large
+Version \versionCF~du \dateversionCF
+
+\vfill
+
+\normalsize
+
+Pierre~Rivière\up{1*} \hspace{.5cm}
+Sophie~Pin\up{2} \hspace{.5cm}
+Yannick~de~Oliveira\up{2} \hspace{.5cm}
+Patrick~de~Kochko\up{1} \hspace{.5cm}
+[... les paysans ...]\up{1} \hspace{.5cm}
+[... les animateurs locaux ...]\up{1} \hspace{.5cm}
+Olivier~David\up{3} \hspace{.5cm}
+Camille~Vindras\up{4} \hspace{.5cm}
+Isabelle~Goldringer\up{2} \\
+\end{center}
+
+\small
+\noindent\up{1}~Réseau Semences Paysannes, 3, avenue de la Gare F-47190 Aiguillon, France 
+
+\noindent\up{2}~INRA, Génétique Quantatitive et Evolution, ferme du Moulon F-91190 Gif sur Yvette, France
+
+\noindent\up{3}~INRA, UR 1404 Unité Mathématiques et Informatique Appliquées du Génome à l'Environnement, F-78352 Jouy-en-Josas, France
+
+\noindent\up{4}~ITAB, Ferme Expérimentale 2485 Route des Pécolets, F-26800 Etoile-sur-Rhône, France
+
+\noindent\up{*} \textbf{Contact}: \href{mailto:pierre@semencespaysannes.org}{\textcolor{mln-green} {pierre@semencespaysannes.org}}
+
+\normalsize
+
+\vfill
+
+\begin{center}
+Copyright \RSP, \INRA, \ITAB.
+
+~\\
+
+\href{http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr}{\includegraphics[width=.2\textwidth]{cc-by-nc-sa}}
+\end{center}
+
+\small
+Ce document est sous licence creative commons BY-NC-SA.
+Vous êtes autorisé à partager et à adapter son contenu tant 
+que vous citez les auteurs de ce document et indiquez si des changements ont eu lieu, 
+que vous ne faites pas un usage commercial de ce document, tout ou partie du matériel le composant,
+que vous partagez dans les mêmes conditions votre travail issu de ce document. 
+Plus d'informations ici: \url{creativecommons.org/licenses/by-nc-sa/4.0/deed.fr}.
+
+\vfill
+
+\yo{Pour citer ce document}:
+\textit{
+Cycle de formations sur la gestion dynamique de la biodiversité cultivée dans les
+\MSPs~en réseau}.
+\RSP, \INRA, \ITAB.
+Version \versionCF~du \dateversionCF.
+Fiche technique.
+Licence CC BY NC SA.
+
+
+\newpage ~\\ \newpage \tableofcontents \newpage \pagestyle{plain}
+
+\chapter{Présentation du cycle de formation}
+\startcontents[chapters]
+\printcontents[chapters]{}{1}{}
+
+\section{Auteurs et objectifs de ce cycle de formation}
+
+\subsection{Les auteurs}
+
+Ce cycle de formation est coordoné par le \RSP, en collaboration avec des équipes de l'\INRA~et de l'\ITAB.
+
+\subsubsection{\RSP}
+Le \RSP~(RSP) est un réseau constitué de plus de quatre-vingt organisations, toutes impliquées dans des initiatives de promotion et de défense de la biodiversité cultivée et des savoir-faire associés.
+Outre la coordination et la consolidation des initiatives locales, le RSP travaille à la promotion de modes de gestion collectifs et de protection des semences paysannes, ainsi qu'à la reconnaissance scientifique et juridique des pratiques paysannes de production et d'échange de semences et de plants.
+Plus d'informations sur le site internet: \url{www.semencespaysannes.org}.
+
+\subsubsection{\INRA}
+Les équipes 
+Diversité Evolution et Adaptation des Populations (DEAP) de l'INRA de Moulon, 
+Dynenvie de l'INRA de Jouy en Josas et 
+Biodiversité Cultivée et Recherche Participative (BCRP) de l'INRA de Rennes, 
+collaborent dans ce projet.
+
+L'équipe DEAP travaille sur la gestion dynamique de la biodiversité cultivée et sa valorisation à travers des agro-écosystèmes durables innovants. 
+Ses recherches s'appuient sur l'expérimentation et la modélisation et son espèce modèle est le blé tendre.
+Plus d'informations sur le site internet: \url{moulon.inra.fr/index.php/fr/equipes/deap}.
+
+L'équipe Dynenvie travaille sur la modélisation dynamique et statistique pour les écosystèmes, l'épidémiologie et l'agronomie.
+Plus d'informations sur le site internet: \url{maiage.jouy.inra.fr/?q=fr/dynenvie}.
+
+L'équipe BCRP travaille sur !!!!! A COMPLETER !!!!!
+
+\subsubsection{\ITAB}
+L'\ITAB~(ITAB) est l'institut technique agricole dédié à la recherche-expérimentation en agriculture biologique.
+Plus d'informations sur le site internet: \url{http://www.itab.asso.fr/}.
+
+
+\subsection{Les objectifs}
+Les objectifs de cycle de formation sont
+
+\begin{itemize}
+\item d'apporter des éléments aux collectifs, animateurs, paysans, techniciens, chercheurs, souhaitant mettre en place des programmes de sélection participative.
+\item d'etre un ensemble de documents ressources pour adapter de nouvelles formations selon les demandes des collectifs locaux. C'est pour cela que tous les documents sont sous liences CC BY NC SA.
+\end{itemize}
+
+Ce cycle de formations est composé de neufs formations (présenté dans chaque chapitre) qui reprennent abordent les méthodes, les outils pour mettre en place les méthodes et les règles et droits d’usage.
+Chacune des formations est composée d’une présentation et d’une fiche technique qui l’accompagne. 
+Des documents en annexes permettent d’aller plus dans le détail mais ne pas les consulter ne
+compromet pas la compréhension des thèmes abordés. 
+Ces documents sont mis à jours régulièrement à partir des retours du terrain, des dernières résultats et de la bilbiographie. 
+Un numéro de version et une date permettent de suivre les mises à jour en début de chaque chapitre.
+
+Ce chapitre d'introduction reprend le contexte dans lequel se place la sélection participative.
+Ces éléments se retrouvent dans la partie introductive de toutes les présentations.
+Tout d'abord, la question de la souveraineté alimentaire, de l'agroécologie et des semences est abordée.
+Ensuite, un rapide historique de la sélection est présenté.
+Puis les \MSPs, 
+la méthodologie de la gestion dynamique de la biodiversité cultivée et de la sélection paysanne et enfin
+un descriptif des formations proposées dans chaque chapitre.
+
+\newpage
+
+
+\section{Souveraineté alimentaire, \agec~et semences}
+\subsection{Du concept de sécurité alimentaire à celui de souveraineté alimentaire}
+
+Lors du sommet mondial de l'alimentation à la FAO en novembre 1996, la Déclaration de Rome pose les bases d'une concertation mondiale sur les problèmes de l'alimentation dans le monde \cite{fao_declaration_1996}.
+
+Les parties contractantes s'engagent à mettre en oeuvre et soutenir le Plan d’Action du Sommet Mondial de l’Alimentation et les délégations s'engagent à éradiquer \guill{\textit{la faim dans tous les pays}}.
+
+La Déclaration du forum des Organisations Non Gouvernementales et paysannes à Rome en 1996 rejoint le Plan d’Action du Sommet Mondial de l’Alimentation et pointe \guill{\textit{certaines causes fondamentales de l'insécurité alimentaire}} : 
+\begin{enumerate}
+\item La globalisation de l'économie mondiale livrée aux multinationales et au modèle de surconsommation qui amène à la \guill{\textit{destruction des économies rurales et à la faillite de l'agriculture familiale}}.
+\item L'agriculture industrialisée qui détruit \guill{\textit{l'exploitation traditionnelle et empoisonne la planète et tous les êtres vivants}}
+\item Les exportations subventionnées qui %provoquent la réduction du stock mondial de céréales et 
+%accroissent \guill{\textit{l'instabilité du marché au détriment des agriculteurs familiaux}}.
+\item Le rôle du FMI et de la Banque Mondiale qui obligent \guill{\textit{les agriculteurs familiaux et les personnes vulnérables}} à payer \guill{\textit{le prix de l'ajustement structurel et du remboursement de la dette}}.
+\end{enumerate}
+
+Pour répondre à ces difficultés, ces organisations proposent un modèle alternatif \guill{\textit{basé sur la décentralisation}} qui redistribuerait la richesse et le pouvoir et permettrait de parvenir à la sécurité alimentaire et à la protection des écosystèmes qui rendent la vie possible sur terre.
+
+La Déclaration souligne \guill{\textit{six éléments clés de ce modèle alternatif}} : 
+aider la capacité à produire des petits producteurs, 
+inverser la concentration des richesses et du pouvoir,
+développer l'\agec,
+améliorer la capacité des états et des gouvernements à garantir la sécurité alimentaire,
+renforcer la participation des organisations populaires et des ONG à tous les niveaux
+et faire garantir le droit à l'alimentation par le droit international.
+
+C'est de cette Déclaration que le concept de souveraineté alimentaire émerge.
+Les questions liées à la gouvernance et à l'autonomie s'ajoutent aux questions liées à la sécurité alimentaire.
+La dimension politique du contrôle des richesses et du pouvoir par les populations est au centre du concept de souveraineté.
+En d'autres termes, comme le souligne la coordination européenne Via Campesina\footnote{
+La Via Campesina est, d'après leur site internet, \guill{\textit{un mouvement international qui rassemble des millions de paysannes et de paysans, de petits et de moyens producteurs, de sans terre, de femmes et de jeunes du monde rural, d'indigènes, de migrants et de travailleurs agricoles ...  Elle défend l'agriculture durable de petite échelle comme moyen de promouvoir la justice sociale et la dignité.}}.} dans un communiqué de 2009 lors du Sommet Mondial sur la Sécurité Alimentaire à la FAO :
+\guill{\textit{La construction de la souveraineté alimentaire repose sur la démocratisation de la prise de décision.}}.
+
+
+\subsection{Etat des lieux et menaces pour la sécurité alimentaire dans le monde}
+Selon la FAO \cite{fao_letat_2012}, en 2012, 870 millions de personnes souffrent de la faim dans le monde dont 850 millions dans les pays en voie de développement.
+
+Dans les pays du nord, le système agricole intensif mis en place n'est pas durable.
+L'impact sur la sécurité alimentaire est direct et négatif \cite{fao_biodiversity_2010,mea_ecosystems_2005,pimentel_environmental_2005,fao_statistical_2013,iaastd_agriculture_2008}.
+Sont dangereusement réduits, les bienfaits rendus par les agrosystèmes à l'humanité : 
+\begin{enumerate}
+\item équilibre des cycles des nutriments, de la formation des sols, de la pollinisation, du contrôle biologique,
+\item régulation du climat et des maladies,
+\item approvisionnement en nourriture, eau, bois,
+\item et par là même, accès à la culture, à l'esthétisme, à l'éducation. 
+\end{enumerate}
+Ces services éco-systémiques sont malmenés et la biodiversité recule \cite{mea_ecosystems_2005}.
+La production de nourriture est basée sur une dépendance accrue aux intrants tels que les fertilisants chimiques, les produits phyto-sanitaires (herbicides, pesticides, fongicides), à l'irrigation qui provoque salinisation, érosion et abaissement des nappes phréatiques; et également aux antibiotiques utilisés pour les élevages \cite{fao_biodiversity_2010}.
+
+Par ailleurs, pour la société, ce modèle agricole a un coût élevé pour sauvegarder la santé des hommes, des végétaux, des animaux et plus généralement de tout l'écosystème \cite{pimentel_environmental_2005,bommelear_couts_2011}.\\
+
+A ces problèmes liés à l'agriculture non durable s'ajoute le changement climatique qui accentue l'insécurité alimentaire \cite{smith_agriculture_2007}.
+La biodiversité diminue et les systèmes biologiques sont déstabilisés \cite{suarez_les_2002}.
+Le changement climatique engendre une irrégularité et généralement une baisse des rendements agricoles \cite{smith_agriculture_2007,lobell_climate_2011}.
+
+\subsection{Les alternatives : agroécologie et participation des acteurs}
+
+Il y a un consensus au niveau des rapports internationaux : 
+pour atteindre un système agricole qui permette, à la fois, de produire assez de nourriture saine et nutritive, qui s'adapte au changement climatique, qui respecte l'environnement, qui soit durable et fasse participer les différents acteurs aux processus de décisions : l'agriculture doit changer de paradigme \cite{fao_biodiversity_2010,iaastd_agriculture_2008,mea_ecosystems_2005,fao_declaration_2009,unctad_wake_2013}.
+
+Pour réaliser un tel objectif, l'IAASTD - un consortium de 400 experts d'origines et de disciplines très différentes qui ont travaillé pendant quatre ans - appelle à une réorientation des sciences agronomiques vers une approche plus holistique des systèmes \cite{iaastd_agriculture_2008,even_liaastd_2009}.
+Il s'agit de prendre en compte la complexité, la diversité, l'aspect pluri-factoriel et multi-fonctionnel des systèmes agricoles.
+Selon le rapport de l'IAASTD, les dimensions sociales, culturelles, économiques et écologiques liées aux services éco-systémiques et aussi la diversité des processus d’innovation technologique doivent associer connaissances et savoirs locaux avec les savoirs scientifiques formels. \cite{iaastd_agriculture_2008,fao_report_2010,mea_ecosystems_2005}.
+
+L'IAASTD souligne l'importance de l'accès aux ressources, notamment l'eau et la terre, du rapprochement entre science et société et souligne la nécessité de faire évoluer les modes de gouvernance, afin de renforcer la participation des différents acteurs du monde agricole aux processus de décision et d’évaluation.
+
+Le rapport promeut le développement de l'\agec~et des recherches interdisciplinaires \cite{even_liaastd_2009}.
+Ce point est corroboré par d'autres rapports de la FAO \cite{fao_international_2007,fao_biodiversity_2010}.
+
+
+\section{L'histoire de la sélection}
+Cette section retrace l'histoire de la sélection depuis la naissance de l'agriculture.
+Elle se divise en trois étapes:
+\begin{itemize}
+\item la naissance de l'agriculture, la gestion et la sélection des semences par les paysan(ne)s pendant plus de 10 000 ans.
+\item l'industrialisation de l'agriculture et la professionalisation des semences
+\item la réapproprition de la gestion et de la sélection par les collectifs de paysans
+\end{itemize}
+
+\subsection{La domestication}
+
+\subsubsection{Exemple des céréales}
+
+\subsubsection{Exemple des tomates}
+
+\subsubsection{Exemple du mais}
+
+
+%\subsubsection{La domestication}
+%
+%La domestication est la modification des caractéristiques génétiques ou du comportement d’une espèce sauvage pour l’adapter aux besoins de l’homme. \\
+%
+%Syndrome de domestication des céréales:
+%\begin{itemize}
+%\item Grain non caduque
+%\item Grain non vêtu
+%\item Augmentation de la taille des fruits
+%\item Augmentation du rapport fruit/végétation
+%\item Synchronisation de la fructification
+%\end{itemize}
+%
+%La domestication est maintenant vue comme une série d’épisodes distincts se produisant à différents moments et différents endroits plutôt qu’une unique « révolution »
+%cf Brown et al 2010
+%
+%%http://fr.wikipedia.org/wiki/Taxonomie_du_bl%C3%A9#Domestication
+%
+%%cf photo téosinte et mais cultivé
+%
+%\subsubsection{L'exemple des blés: \textit{turgidum monococcum}}
+%\includegraphics[width=.8\textwidth,page=6]{genealogie_ble} \cite{genealogie_ble}
+%
+%\includegraphics[width=.8\textwidth]{diffusion_monococcum} \cite{diffusion_monococcum}
+%
+%\subsubsection{L'exemple des blés: \textit{turgidum turgidum}}
+%
+%\includegraphics[width=.8\textwidth]{diffusion_turgidum} \cite{diffusion_turgidum}
+%
+%\subsubsection{L'exemple des blés: \textit{turgidum aestivum}}
+%
+%\includegraphics[width=.8\textwidth]{diffusion_aestivum} \cite{diffusion_aestivum}
+%
+%\subsubsection{-10000 $\rightarrow$ XIX\up{ème}siècle : les paysans sélectionneurs depuis le néolithique.}
+%
+%\includegraphics[width=\textwidth]{moisson_egypte} \tiny \cite{moisson_egypte} 
+%\includegraphics[width=\textwidth]{moisson_moyen_age1} \tiny \cite{moisson_moyen_age1}
+%\includegraphics[width=\textwidth]{moisson_moyen_age2} \tiny \cite{moisson_moyen_age2}
+%\includegraphics[width=\textwidth]{moisson_1800} \tiny \cite{moisson_1800}
+%\includegraphics[width=\textwidth]{moisson_moyen_age3} \tiny \cite{moisson_moyen_age3}
+%
+%\subsubsection{XIX\up{ème}siècle  $\rightarrow$ Aujourd'hui : professionnalisation de la sélection et institutionnalisation de la gestion des ressources génétiques.}
+%
+%\begin{itemize}
+%\item Sélection pour une agriculture intensive par des sélectionneurs.\\
+%\item Les ressources génétiques comme réservoir dans une gestion \textit{ex-situ}.
+%\item Mise en place du catalogue avec les critères de Distinction, d'Homogénéité et de Stabilité (DHS).\\
+%Mise en place d'un système de propriété intellectuelle sur le vivant.
+%\end{itemize}
+%
+%
+%\includegraphics[page=1,width=.65\textwidth]{bormans} \tiny \cite{bormans} \\
+%\includegraphics[width=.95\textwidth]{Chambrefroide} \tiny \cite{Chambrefroide} \\ 
+%\includegraphics[width=.95\textwidth]{selection-hierarchisee-site-UPOV-acces-le-2012-09-25} \tiny \cite{selection-hierarchisee-site-UPOV-acces-le-2012-09-25}  \\
+%
+%\subsubsection{Conséquence de cette évolution}
+%
+%\begin{itemize}
+%\item La biodiversité cultivée diminue %\citep{fao_state_1996,goffaux_quels_2011} :
+%		\begin{itemize}
+%		\item à l'intérieur des variétés,
+%		\item entre les variétés,
+%		\item dans les paysages.
+%		\end{itemize}
+%
+%	
+%	\includegraphics[width=.5\textwidth]{VP.png} \tiny \cite{VP}
+%	\includegraphics[width=.5\textwidth]{VM.png} \tiny \cite{VM}  \\
+%		populations hétérogènes, adaptées localement, évolutives
+%		variétés homogènes : lignées pures, hybrides
+%
+%
+%
+%	\item Il y a un manque de variétés pour les systèmes agroécologiques
+%	
+%	\end{itemize}
+%
+%	=> Besoin de développer de nouvelles variétés adaptées localement à la diversité des systèmes agroécologiques et qui contribuent à plus de biodiversité.
+%
+%\subsubsection{2000  $\rightarrow$ Aujourd'hui : la réappropriation de la sélection et de la gestion des ressources génétiques par la société civile.}
+%
+%Pour répondre à la diminution de la biodiversité cultivée et à l'uniformisation de la sélection variétale, la société civile s'organise.
+%
+%La société civile : 
+%des paysans,
+%des jardiniers,
+%des consommateurs,
+%des artisans semenciers, etc. % d'autres associés autour de la conservation plus ou moins patrimoniale des variétés locales.
+%
+%\begin{itemize}
+%\item Remise en question du système semencier actuel basé sur le productivisme, la centralisation et la propriété intellectuelle sur le vivant %\citep{demeulenaere_cultiver_2010}.
+%\item Besoin de nouvelles variétés adaptées à la diversité des contextes agroécologiques et socio-économiques.
+%\end{itemize}
+%
+%
+%Ces acteurs de la société civile se regroupent en associations.
+%
+
+Pour aller plus loin: Bonneuil et al
+
+
+\section{\MSPs~en réseau}
+
+\begin{multicols}{2}
+Les \MSPs~sont des lieux, physiques ou non, qui regroupent un collectif qui oeuvre au maintien et au renouvellement de la diversité cultivée.
+Ces maisons sont très diversifiées et partagent, pour la plupart, les missions suivantes \cite{rsp_msp_2014}:
+
+\begin{enumerate}
+\item la prospection, à la recherche de variétés anciennes ou locales
+\item la  gestion dynamique des semences (conservation, sélection, expérimentation, multiplication, échanges de semences, stockage)
+\item échanges de savoirs et savoir-faire
+\item la valorisation des semences paysannes ou des produits qui en sont issus
+\item la communication
+\item l'animation du collectif (gestion des moyens humains, matériels et financiers)
+\end{enumerate}
+
+Ce document traite particulièrement des points 1, 2, 3 et 6.
+Il receuille différentes formations mises en place par le \RSP, l'\ITAB~et l'\INRA~pour accompagner les \MSPs~dans leurs programmes de gestion et de sélection sur différentes espèces telles que 
+les céréales à paille, 
+la tomate, 
+le maïs et 
+le châtaignier.
+
+\columnbreak
+
+\begin{figure}[H]
+\centering\includegraphics[width=.5\textwidth, page=1]{msp_objectifs_acteurs}
+\caption{Les \MSPs~en réseau \cite{msp_objectifs_acteurs}.}
+\end{figure}
+
+\end{multicols}
+
+
+\section{Méthodologie de la gestion dynamique de la biodiversité cultivée et de la sélection paysanne}
+
+La gestion dynamique et la sélection paysanne sont des processus dynamiques et récurrents.
+Dynamiques car il ne se produisent pas de manière linéaires et sont en perpétuels mouvements.
+Récurrents car certaines étapes se répétent au cours du temps.
+
+Cette vision des choses peut être assez troublantes car on ne sait pas quand le processus se fini, ni quand il commence \dots
+La diversité est dynamique et évolue, sa gestion et la sélection dans celle-ci font de même.
+
+Au \RSP, cette sélection se fait dans un réseau d’acteurs connectés: praticiens (paysans, jardiniers, artisans semenciers) animateurs et chercheurs.
+Ces acteurs collaborent pour mettre au point des méthodes et des outils pour mener la sélection.
+
+La mise en place de cette méthodologie peut se diviser en deux grands volets (Figure \ref{methodo-globale}):
+
+\begin{enumerate}
+
+\item \textbf{\color{mln-green} des étapes en routine} dans les \MSPs~ afin de sélectionner des variétés paysannes adaptées à la diversité des pratiques:
+
+\begin{itemize}
+\item Mobilisation et brassage de la diversité (utilistion de la biodiversité existante, brasage par mélanges et croisements, etc.)
+\item Evaluation et sélection agronomique et organoleptique (basée sur la décentralisation de la sélection, l'utilisation de variétés-populations)
+\item Production de grains, semences, produits transformés
+\end{itemize}
+
+En amont de la sélection, il faut mobiliser la diversité existante, voire la brasser avec des croisements par exemple.
+Ensuite, cette diversité peut être sélectionnée au niveau agronomique, organoleptique et nutritionnel. 
+Plusieurs années de sélection sont nécessaires pour sélectionner une population sur différents critères.
+La sélection peut se faire plusieurs années de suite sur les mêmes critères.
+Une population ou un mélange de population sélectionné pourra ensuite être mis en production dans les fermes ou dans les jardins.
+
+Ces différentes étapes sont construites entre les acteurs (paysans, jardiniers, artisans semenceirs, animateurs, chercheurs) au cours du programme et sont parties intégrantes de la gestion de la biodiversité cultivée.
+
+
+\item \textbf{\color{mln-green}des évaluations bilans} afin de répondre à des questions précises pour évaluer ce qui se passe dans les étapes en routines.
+Par exemple évaluer l'adaptation des populations à son terroir et à ses pratiques.
+Ces évaluations sont plus contraignantes au niveau expérimental et ont vocation a être effectuées une année ou deux.
+
+\end{enumerate}
+
+
+\begin{figure}[H]
+\centering\includegraphics[width=.8\textwidth, page=1]{methodo-globale}
+\caption{Programme de sélection dynamique et récurrente. Les flèches représentent les lots de semences récoltés \cite{methodo-globale}.}
+\label{methodo-globale}
+\end{figure}
+
+Ce type de programme est possible s'il est \yo{co-construit} au sein d'un collectif d'acteurs: paysans, jardiniers, artisans semenciers, animateurs, chercheurs (approche multi-disciplinaire: génétique des populations, génétique quantitative, agronomie, statistique, sociologie, bioinformatique).
+
+La mise en réseau des acteurs et des \MSPs~est primordiale. 
+C'est l'organisation sociale qui permet d'échanger semences, savoirs, savoir-faire et résultats.
+
+Bien sûr, cela n'est qu'une vision et n'est pas représentatif de la diversié des approches de sélection.
+
+\section{Descriptif des formations}
+
+Ce cycle de formations est composé de neufs formations qui reprennent ces différentes étapes et abordent les méthodes (formations A, B, C, D, E), les outils pour mettre en place les méthodes (formations Fa. et G) et les règles et droits d'usage (formations Fb. et H).
+
+Chacune des formations est composée d'une présentation et d'une fiche technique qui l'accompagne. 
+Des documents en annexes permettent d'aller plus dans le détail mais ne pas les consulter ne compromet pas la compréhension des thèmes abordés.
+Ces documents sont mis à jours régulièrement à partir des retours du terrain, des dernières résultats et de la bilbiographie.
+Un numéro de version et une date permettent de suivre les mises à jour.
+
+\subsection{\formationA}
+\paragraph{Description} \descriptifFA
+\paragraph{Version} Version \versionFA~du \dateversionFA
+
+\subsection{\formationB}
+\paragraph{Description} \descriptifFB
+\paragraph{Version} Version \versionFB~du \dateversionFB
+
+
+\subsection{\formationC}
+\paragraph{Description} \descriptifFC
+%\paragraph{Version} Version \versionFC~du \dateversionFC
+
+
+\subsection{\formationD}
+\paragraph{Description} \descriptifFD
+%\paragraph{Version} Version \versionFD~du \dateversionFD
+
+\subsection{\formationE}
+\paragraph{Description} \descriptifFE
+%\paragraph{Version} Version \versionFE~du \dateversionFE
+
+\subsection{\formationFa}
+\paragraph{Description} \descriptifFFa
+%\paragraph{Version} Version \versionFFa~du \dateversionFFa
+
+\subsection{\formationFb}
+\paragraph{Description} \descriptifFFb
+%\paragraph{Version} Version \versionFFb~du \dateversionFFb
+
+\subsection{\formationG}
+\paragraph{Description} \descriptifFG
+%\paragraph{Version} Version \versionFG~du \dateversionFG
+
+\subsection{\formationH}
+\paragraph{Description} \descriptifFH
+%\paragraph{Version} Version \versionFH~du \dateversionFH
+
+
+\section{Licence, copyright et sources}
+
+Tous les documents \texttt{pdf} et les codes \texttt{tex} (qui ont permis de générer les \texttt{pdf} avec \LaTeX) sont sous lience creative commons BY-NC-SA. 
+Vous êtes autorisé à partager et à adapter leurs contenus tant que vous citez les auteurs des documents ou des codes et indiquez si des changements ont eu lieu, que vous ne faites pas un usage commercial des documents ou des codes, tout ou partie du matériel le composant, que vous partagez dans les mêmes conditions votre travail issu de ces documents ou ces codes. 
+Plus d'informations ici : \url{creativecommons.org/licenses/by-nc-sa/4.0/deed.fr}.
+Le copyright est indiqué avec la licence.
+
+~\\
+
+Les \texttt{pdf} des fiches techniques et des formations sont disponibles en téléchargement ici: \url{www.semencespaysannes.org}.
+La manière de citer les documents est indiquée au début des fiches et à la fin des présentations.
+
+~\\
+
+Les figures utilisées dans les fiches et les présentations sont disponibles en téléchargement au format \texttt{odp}, \texttt{pdf} ou \texttt{png} ici: \url{www.semencespaysannes.org}.
+Les conditions d'utilisation (licence et citation) de ces figures sont dans le fichier \texttt{photos\_images\_figures\_fiche.pdf} téléchargeable ici:  \url{www.semencespaysannes.org}.
+~\\
+
+Les fichiers \texttt{tex} sont disponibles en téléchargement ici: \url{github/priviere/formations_MSP}.
+La manière de citer les codes est indiquée au début des fichiers \texttt{tex}.
+
+\section{Collaborer}
+Tout le monde est bienvenu pour collaborer à ce cycle de formations et enrichir son contenu afin d'ajouter: 
+des espèces,
+des résultats,
+des témoignages,
+de la bibliographie, ...
+
+L'idéal est d'envoyer un mail à \href{mailto:pierre@semencespaysannes.org}{\textcolor{mln-green} {pierre@semencespaysannes.org}} afin de se coordoner! Merci!
+
+\chapter{\formationA}
+\startcontents[chapters]
+\input{../formation_A/fiche/formation_A_fiche}
+\newpage
+\printcontents[chapters]{}{1}{}
+\newpage
+\input{../formation_A/fiche/1.introduction} 
+%\input{2.diversite} 
+%\input{3.1.agro}
+%\input{3.2.agro_decentralisation}
+%\input{3.3.agro_varietes}
+%\input{3.4.agro_ferme_reseau}
+%\input{3.5.organo}
+%\input{4.production} 
+%\input{5.reseau}
+%\input{6.evaluation} 
+%\input{7.regles_droits_usage} 
+%\input{8.conlusion-perspectives} 
+
+\chapter*{Remerciements}\addcontentsline{toc}{chapter}{Remerciements}
+\input{../ressources/remerciements.tex}
+
+
+\chapter*{Bibliographie}\addcontentsline{toc}{chapter}{Bibliographie}
+\printbibliography[type=book,title={\large Livres}]
+\printbibliography[type=misc,title={\large Photos, images et figures}]
+\printbibliography[type=article,title={\large Articles}]
+
+\end{document}
+
+
