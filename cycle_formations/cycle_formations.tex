@@ -15,13 +15,11 @@
 
 
 \begin{document}
-\pagestyle{empty}
 
-\titleformat{\part}
-{\normalfont}
-{}
-{}
-{
+\part{\Large \yo{Cycle de formations sur la gestion dynamique \\ de la biodiversité cultivée dans \\ les \MSPs~en réseau}}
+\startcontents[part]
+
+
 \begin{center}
 \includegraphics[width=0.15\textwidth]{Logo-ITAB}
 \hspace{1cm}
@@ -30,11 +28,9 @@
 \includegraphics[height=0.15\textwidth]{Logo-RSP}
 \hspace{1cm}
 \includegraphics[width=0.15\textwidth]{Logo-UMRGV}
-\end{center}
 \vfill
-}
-[
-\begin{center}
+\Large \yo{Cycle de formations sur la gestion dynamique \\ de la biodiversité cultivée dans \\ les \MSPs~en réseau}
+\vfill
 \large
 Version \versionCF~du \dateversionCF
 \vfill
@@ -72,35 +68,25 @@ Plus d'informations ici: \url{creativecommons.org/licenses/by-nc-sa/4.0/deed.fr}
 \vfill
 \yo{Pour citer ce document}:
 \textit{
-Cycle de formations sur la gestion dynamique de la biodiversité cultivée dans les
-\MSPs~en réseau}.
+Cycle de formations sur la gestion dynamique de la biodiversité cultivée dans les \MSPs~en réseau}.
 \RSP, \INRA, \ITAB.
 Version \versionCF~du \dateversionCF.
 Fiche technique.
 Licence CC BY NC SA.
-]
 
-% \part{ \Large \centering \titre \\ \large Cycle de formations}
+\newpage
 
-\part{toto}
-
-%\chapterimage{BER-visite5.JPG}
+%\chapterimage{BER-visite5.JPG} % obligatoire, sinon bug
 \pagestyle{empty} % No headers
 \chapter*{Sommaire}
-\printcontents[part]{}{0}{\setcounter{tocdepth}{1}}{}
-\addcontentsline{toc}{chapter}{Sommaire}
-\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
-\pagestyle{fancy} % Print headers again
+\printcontents[part]{}{0}{\setcounter{tocdepth}{0}}{}
 
-\hypersetup{colorlinks=true}
-
-\newpage \pagestyle{plain}
-
+\newpage
 
 %\chapterimage{sp1}
 \chapter{Présentation du cycle de formation}
-%\startcontents[chapters]
-%\printcontents[chapters]{}{1}{}
+\startcontents[chap1]
+\printcontents[chap1]{}{0}{\setcounter{tocdepth}{1}}{}
 \input{sections/1.acteurs_objs.tex}
 \input{sections/2.souverainete_alim_agroecologie_semences.tex}
 \input{sections/3.histoire_selection.tex}
@@ -108,11 +94,15 @@ Licence CC BY NC SA.
 \input{sections/5.methodo.tex}
 \input{sections/6.descriptifs_formations.tex}
 \input{sections/7.licence_collaborer.tex}
+\stopcontents[chap1]
 
 
 %\chapterimage{sp1}
 \chapter{\formationA}
-%\startcontents[chapters]
+%\startcontents[chap2]
+%\printcontents[chap2]{}{0}{\setcounter{tocdepth}{1}}{}
+%\stopcontents[chap2]
+
 %\input{../formation_A/fiche/formation_A_fiche}
 %\newpage
 %\printcontents[chapters]{}{1}{}
@@ -157,20 +147,19 @@ Licence CC BY NC SA.
 \chapter{\formationH}
 
 
-
-
-
-
-
-
 \chapter*{Remerciements}\addcontentsline{toc}{chapter}{Remerciements}
 \input{../ressources/remerciements.tex}
-
 
 \chapter*{Bibliographie}\addcontentsline{toc}{chapter}{Bibliographie}
 \printbibliography[type=book,title={\large Livres}]
 \printbibliography[type=misc,title={\large Photos, images et figures}]
 \printbibliography[type=article,title={\large Articles}]
+
+\stopcontents[part]
+
+
+\part{Annexes}
+
 
 \end{document}
 
