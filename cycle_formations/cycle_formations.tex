@@ -84,11 +84,25 @@ Fiche technique.
 Licence CC BY NC SA.
 
 
-\newpage ~\\ \newpage \tableofcontents \newpage \pagestyle{plain}
+\newpage ~\\ \newpage 
 
+\chapterimage{P1080688}
+\pagestyle{empty} % No headers
+\chapter*{Sommaire}
+\printcontents[part]{}{0}{\setcounter{tocdepth}{1}}{}
+\addcontentsline{toc}{chapter}{Sommaire}
+\cleardoublepage % Forces the first chapter to start on an odd page so it's on the right
+\pagestyle{fancy} % Print headers again
+
+\hypersetup{colorlinks=true}
+
+\newpage \pagestyle{plain}
+
+
+\chapterimage{sp1}
 \chapter{Présentation du cycle de formation}
-\startcontents[chapters]
-\printcontents[chapters]{}{1}{}
+%\startcontents[chapters]
+%\printcontents[chapters]{}{1}{}
 \input{sections/1.acteurs_objs.tex}
 \input{sections/2.souverainete_alim_agroecologie_semences.tex}
 \input{sections/3.histoire_selection.tex}
