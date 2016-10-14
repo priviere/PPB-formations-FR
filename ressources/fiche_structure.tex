@@ -14,7 +14,7 @@
 \usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry} % gérer les marges
 
 \usepackage{titlesec} % Allows customization of titles
-%\usepackage[titletoc]{appendix} % To add Appendix into annex section number i.e. Appendix A
+\usepackage{titletoc} 
 
 % citations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[a4paper=true, colorlinks=true, linkcolor=black,urlcolor=blue, citecolor=black]{hyperref}
@@ -142,13 +142,6 @@
 %\titleformat{\subparagraph}[hang]{\normalfont\normalsize\bfseries\color{gray}}{}{0pt}{}[]
 
 \newcommand{\logoITABMIARSPDEAP}{
-\includegraphics[width=0.15\textwidth]{Logo-ITAB}
-\hspace{1cm}
-\includegraphics[width=0.15\textwidth]{Logo-maiage}
-\hspace{1cm}
-\includegraphics[height=0.15\textwidth]{Logo-RSP}
-\hspace{1cm}
-\includegraphics[width=0.15\textwidth]{Logo-UMRGV}
 }
 
 
@@ -278,6 +271,7 @@
 %----------------------------------------------------------------------------------------
 %	PAGE HEADERS
 %----------------------------------------------------------------------------------------
+\usepackage{fancyhdr}
 
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\hspace{.7cm}#1}{}} % Chapter text font settings
