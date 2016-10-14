@@ -23,45 +23,8 @@
 \addbibresource{../../ressources/biblio}
 
 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% pour intégrer les instruction pour SHiNeMaS
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\newcommand{\BDinput}[1]{
-\setlength{\fboxrule}{.2mm}
-\noindent
-\fcolorbox{black}{black}{\makebox[\textwidth][c]{\textcolor{white}{$-$ Protocole \BD ~$-$}}} \\
-\fcolorbox{black}{white}{
-\begin{minipage}[]{\textwidth}
-#1
-\end{minipage}
-}}
-
-\newcommand{\Rinput}[1]{
-\setlength{\fboxrule}{.2mm}
-\noindent
-\fcolorbox{black}{black}{\makebox[\textwidth][c]{\textcolor{white}{$-$ Code \R ~$-$}}} \\
-\fcolorbox{black}{white}{\makebox[\textwidth][l]{#1}}
-}
-
-
-\newcommand{\Routput}[1]{
-\setlength{\fboxrule}{.2mm}
-\noindent
-\fcolorbox{black}{black}{\makebox[\textwidth][c]{\textcolor{white}{$-$ Sorties ~$-$}}} \\
-\fcolorbox{black}{white}{\makebox[\textwidth][l]{#1}}
-}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Boites à messages
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % couleurs
@@ -121,10 +84,6 @@
 \end{minipage}
 }~\\
 }
-
-
-
-
 
 
 
@@ -239,26 +198,9 @@
 
 }
 
-
-%----------------------------------------------------------------------------------------
-%	VARIOUS REQUIRED PACKAGES
-%----------------------------------------------------------------------------------------
-
-\usepackage{tikz} % Required for drawing custom shapes
-
-\usepackage{enumitem} % Customize lists
-\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
-
-\usepackage{booktabs} % Required for nicer horizontal rules in tables
-
-\usepackage{eso-pic} % Required for specifying an image background in the title page
-
-
 %----------------------------------------------------------------------------------------
 %	MAIN TABLE OF CONTENTS
 %----------------------------------------------------------------------------------------
-
-\usepackage{titletoc} % Required for manipulating the table of contents
 
 %\contentsmargin{0cm} % Removes the default margin
 % Chapter text styling
@@ -268,7 +210,6 @@
 %\titleformat*{\section}{\normalfont\huge\bfseries\color{mln-green}}
 %\titleformat*{\subsection}{\normalfont\huge\bfseries\color{mln-brown}}
 %\titleformat*{\subsubsection}{\normalfont\huge\bfseries\color{gray}}
-
 
 
 \titlecontents{chapter}
@@ -337,8 +278,6 @@
 %----------------------------------------------------------------------------------------
 %	PAGE HEADERS
 %----------------------------------------------------------------------------------------
-
-\usepackage{fancyhdr} % Required for header and footer configuration
 
 \pagestyle{fancy}
 \renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\hspace{.7cm}#1}{}} % Chapter text font settings
