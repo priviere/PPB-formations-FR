@@ -17,53 +17,51 @@
 \begin{document}
 \pagestyle{empty}
 
+\titleformat{\part}
+{\normalfont}
+{}
+{}
+{
 \begin{center}
-
-\headtitlepagefiche{\logoITABMIARSPDEAP}{Cycle de formations} 
-
+\includegraphics[width=0.15\textwidth]{Logo-ITAB}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-maiage}
+\hspace{1cm}
+\includegraphics[height=0.15\textwidth]{Logo-RSP}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-UMRGV}
+\end{center}
 \vfill
-
+}
+[
+\begin{center}
 \large
 Version \versionCF~du \dateversionCF
-
 \vfill
-
 \normalsize
-
 Pierre~Rivière\up{1*} \hspace{.5cm}
 Sophie~Pin\up{2} \hspace{.5cm}
 Yannick~de~Oliveira\up{2} \hspace{.5cm}
 Patrick~de~Kochko\up{1} \hspace{.5cm}
-[... les paysans ...]\up{1} \hspace{.5cm}
-[... les animateurs locaux ...]\up{1} \hspace{.5cm}
+(... les paysans ...)\up{1} \hspace{.5cm}
+(... les animateurs locaux ...)\up{1} \hspace{.5cm}
 Olivier~David\up{3} \hspace{.5cm}
 Camille~Vindras\up{4} \hspace{.5cm}
 Isabelle~Goldringer\up{2} \\
-\end{center}
-
 \small
-\noindent\up{1}~Réseau Semences Paysannes, 3, avenue de la Gare F-47190 Aiguillon, France 
-
-\noindent\up{2}~INRA, Génétique Quantatitive et Evolution, ferme du Moulon F-91190 Gif sur Yvette, France
-
-\noindent\up{3}~INRA, UR 1404 Unité Mathématiques et Informatique Appliquées du Génome à l'Environnement, F-78352 Jouy-en-Josas, France
-
-\noindent\up{4}~ITAB, Ferme Expérimentale 2485 Route des Pécolets, F-26800 Etoile-sur-Rhône, France
-
+\end{center}
+\noindent\up{1}~Réseau Semences Paysannes, 3, avenue de la Gare F-47190 Aiguillon, France \\
+\noindent\up{2}~INRA, Génétique Quantatitive et Evolution, ferme du Moulon F-91190 Gif sur Yvette, France \\
+\noindent\up{3}~INRA, UR 1404 Unité Mathématiques et Informatique Appliquées du Génome à l'Environnement, F-78352 Jouy-en-Josas, France \\
+\noindent\up{4}~ITAB, Ferme Expérimentale 2485 Route des Pécolets, F-26800 Etoile-sur-Rhône, France \\
 \noindent\up{*} \textbf{Contact}: \href{mailto:pierre@semencespaysannes.org}{\textcolor{mln-green} {pierre@semencespaysannes.org}}
-
 \normalsize
-
 \vfill
-
 \begin{center}
 Copyright \RSP, \INRA, \ITAB.
-
 ~\\
-
 \href{http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr}{\includegraphics[width=.2\textwidth]{cc-by-nc-sa}}
 \end{center}
-
 \small
 Ce document est sous licence creative commons BY-NC-SA.
 Vous êtes autorisé à partager et à adapter son contenu tant 
@@ -71,9 +69,7 @@ que vous citez les auteurs de ce document et indiquez si des changements ont eu 
 que vous ne faites pas un usage commercial de ce document, tout ou partie du matériel le composant,
 que vous partagez dans les mêmes conditions votre travail issu de ce document. 
 Plus d'informations ici: \url{creativecommons.org/licenses/by-nc-sa/4.0/deed.fr}.
-
 \vfill
-
 \yo{Pour citer ce document}:
 \textit{
 Cycle de formations sur la gestion dynamique de la biodiversité cultivée dans les
@@ -82,11 +78,13 @@ Cycle de formations sur la gestion dynamique de la biodiversité cultivée dans 
 Version \versionCF~du \dateversionCF.
 Fiche technique.
 Licence CC BY NC SA.
+]
 
+% \part{ \Large \centering \titre \\ \large Cycle de formations}
 
-\newpage ~\\ \newpage 
+\part{toto}
 
-\chapterimage{P1080688}
+%\chapterimage{BER-visite5.JPG}
 \pagestyle{empty} % No headers
 \chapter*{Sommaire}
 \printcontents[part]{}{0}{\setcounter{tocdepth}{1}}{}
@@ -99,7 +97,7 @@ Licence CC BY NC SA.
 \newpage \pagestyle{plain}
 
 
-\chapterimage{sp1}
+%\chapterimage{sp1}
 \chapter{Présentation du cycle de formation}
 %\startcontents[chapters]
 %\printcontents[chapters]{}{1}{}
@@ -112,7 +110,8 @@ Licence CC BY NC SA.
 \input{sections/7.licence_collaborer.tex}
 
 
-%\chapter{\formationA}
+%\chapterimage{sp1}
+\chapter{\formationA}
 %\startcontents[chapters]
 %\input{../formation_A/fiche/formation_A_fiche}
 %\newpage
@@ -130,6 +129,39 @@ Licence CC BY NC SA.
 %\input{6.evaluation} 
 %\input{7.regles_droits_usage} 
 %\input{8.conlusion-perspectives} 
+
+
+%\chapterimage{sp1}
+\chapter{\formationB}
+
+
+%\chapterimage{sp1}
+\chapter{\formationC}
+
+%\chapterimage{sp1}
+\chapter{\formationD}
+
+%\chapterimage{sp1}
+\chapter{\formationE}
+
+%\chapterimage{sp1}
+\chapter{\formationFa}
+
+%\chapterimage{sp1}
+\chapter{\formationFb}
+
+%\chapterimage{sp1}
+\chapter{\formationG}
+
+%\chapterimage{sp1}
+\chapter{\formationH}
+
+
+
+
+
+
+
 
 \chapter*{Remerciements}\addcontentsline{toc}{chapter}{Remerciements}
 \input{../ressources/remerciements.tex}
