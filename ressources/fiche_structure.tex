@@ -14,7 +14,7 @@
 \usepackage[top=2cm, bottom=2cm, left=3cm, right=2cm]{geometry} % gérer les marges
 
 \usepackage{titlesec} % Allows customization of titles
-\usepackage[titletoc]{appendix} % To add Appendix into annex section number i.e. Appendix A
+%\usepackage[titletoc]{appendix} % To add Appendix into annex section number i.e. Appendix A
 
 % citations %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage[a4paper=true, colorlinks=true, linkcolor=black,urlcolor=blue, citecolor=black]{hyperref}
@@ -175,12 +175,12 @@
 %{\color{gray}\titlerule*{}\contentspage}
 %
 
-\titleformat{\chapter}[hang]{\normalfont\Large\bfseries\color{mln-green}}{\thechapter}{0pt}{~}[~]
-\titleformat{\section}[hang]{\normalfont\Large\bfseries\color{mln-green}}{\thesection.~}{0pt}{}[]
-\titleformat{\subsection}[hang]{\normalfont\large\bfseries\color{mln-brown}}{\hspace{0.8cm}\thesubsection.~}{0pt}{}[]
-\titleformat{\subsubsection}[hang]{\normalfont\normalsize\bfseries\color{gray}}{\hspace{1.9cm}\thesubsubsection.~}{0pt}{}[]
-\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries\color{gray}}{}{0pt}{}[]
-\titleformat{\subparagraph}[hang]{\normalfont\normalsize\bfseries\color{gray}}{}{0pt}{}[]
+%\titleformat{\chapter}[hang]{\normalfont\Large\bfseries\color{mln-green}}{\thechapter}{0pt}{~}[~]
+%\titleformat{\section}[hang]{\normalfont\Large\bfseries\color{mln-green}}{\thesection.~}{0pt}{}[]
+%\titleformat{\subsection}[hang]{\normalfont\large\bfseries\color{mln-brown}}{\hspace{0.8cm}\thesubsection.~}{0pt}{}[]
+%\titleformat{\subsubsection}[hang]{\normalfont\normalsize\bfseries\color{gray}}{\hspace{1.9cm}\thesubsubsection.~}{0pt}{}[]
+%\titleformat{\paragraph}[hang]{\normalfont\normalsize\bfseries\color{gray}}{}{0pt}{}[]
+%\titleformat{\subparagraph}[hang]{\normalfont\normalsize\bfseries\color{gray}}{}{0pt}{}[]
 
 \newcommand{\logoITABMIARSPDEAP}{
 \includegraphics[width=0.15\textwidth]{Logo-ITAB}
@@ -238,5 +238,234 @@
 \vfill
 
 }
+
+
+%----------------------------------------------------------------------------------------
+%	VARIOUS REQUIRED PACKAGES
+%----------------------------------------------------------------------------------------
+
+\usepackage{tikz} % Required for drawing custom shapes
+
+\usepackage{enumitem} % Customize lists
+\setlist{nolistsep} % Reduce spacing between bullet points and numbered lists
+
+\usepackage{booktabs} % Required for nicer horizontal rules in tables
+
+\usepackage{eso-pic} % Required for specifying an image background in the title page
+
+
+%----------------------------------------------------------------------------------------
+%	MAIN TABLE OF CONTENTS
+%----------------------------------------------------------------------------------------
+
+\usepackage{titletoc} % Required for manipulating the table of contents
+
+%\contentsmargin{0cm} % Removes the default margin
+% Chapter text styling
+
+% ca sert à rien ça en fait !!!
+%\titleformat*{\chapter}{\normalfont\huge\bfseries\color{black}}
+%\titleformat*{\section}{\normalfont\huge\bfseries\color{mln-green}}
+%\titleformat*{\subsection}{\normalfont\huge\bfseries\color{mln-brown}}
+%\titleformat*{\subsubsection}{\normalfont\huge\bfseries\color{gray}}
+
+
+
+\titlecontents{chapter}
+{\bfseries\color{black}}
+{\color{black}\contentslabel{0.7cm}}
+{}
+{\color{black}\titlerule*{}\contentspage}
+
+
+\titlecontents{section}[1.5cm]
+{\bfseries\color{mln-green}}
+{\contentslabel{1cm}}
+{}
+{\color{mln-green}\titlerule*{}\contentspage}
+
+
+\titlecontents{subsection}[2.5cm]
+{\color{mln-brown}\bfseries}
+{\color{mln-brown}\contentslabel{1.3cm}}
+{}
+{\color{mln-brown}\titlerule*{}\contentspage}
+
+
+\titlecontents{subsubsection}[3.5cm]
+{\color{subsubsection.color}\bfseries}
+{\color{subsubsection.color}\contentslabel{1.7cm}}
+{}
+{\color{subsubsection.color}\titlerule*{}\contentspage}
+
+
+% Section text styling
+%\titlecontents{section}[1.25cm] % Indentation
+%{\color{red}\addvspace{5pt}\sffamily\bfseries} % Spacing and font options for sections
+%{\contentslabel[\thecontentslabel]{1.25cm}} % Section number
+%{}
+%{\sffamily\hfill\thecontentspage} % Page number
+%[]
+
+% Subsection text styling
+%\titlecontents{subsection}[1.25cm] % Indentation
+%{\color{red}\addvspace{1pt}\sffamily\small} % Spacing and font options for subsections
+%{\contentslabel[\thecontentslabel]{1.25cm}} % Subsection number
+%{}
+%{\sffamily\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
+%[] 
+
+
+%----------------------------------------------------------------------------------------
+%	MINI TABLE OF CONTENTS IN CHAPTER HEADS
+%----------------------------------------------------------------------------------------
+
+% Section text styling
+\titlecontents{lsection}[0em] % Indendating
+{\footnotesize\sffamily} % Font settings
+{}
+{}
+{}
+
+% Subsection text styling
+\titlecontents{lsubsection}[.5em] % Indentation
+{\normalfont\footnotesize\sffamily} % Font settings
+{}
+{}
+{}
+
+%----------------------------------------------------------------------------------------
+%	PAGE HEADERS
+%----------------------------------------------------------------------------------------
+
+\usepackage{fancyhdr} % Required for header and footer configuration
+
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\sffamily\normalsize\bfseries\hspace{.7cm}#1}{}} % Chapter text font settings
+\renewcommand{\sectionmark}[1]{\markright{\sffamily\normalsize\thesection\hspace{.3cm}#1}{}} % Section text font settings
+\fancyhf{} \fancyhead[LE,RO]{\sffamily\normalsize\thepage} % Font setting for the page number in the header
+\fancyhead[LO]{\rightmark} % Print the nearest section name on the left side of odd pages
+\fancyhead[RE]{\leftmark} % Print the current chapter name on the right side of even pages
+\renewcommand{\headrulewidth}{0.5pt} % Width of the rule under the header
+\addtolength{\headheight}{2.5pt} % Increase the spacing around the header slightly
+\renewcommand{\footrulewidth}{0pt} % Removes the rule in the footer
+\fancypagestyle{plain}{\fancyhead{}\renewcommand{\headrulewidth}{0pt}} % Style for when a plain pagestyle is specified
+
+% Removes the header from odd empty pages at the end of chapters
+\makeatletter
+\renewcommand{\cleardoublepage}{
+\clearpage\ifodd\c@page\else
+\hbox{}
+\vspace*{\fill}
+\thispagestyle{empty}
+\newpage
+\fi}
+
+		  
+%----------------------------------------------------------------------------------------
+%	SECTION NUMBERING IN THE MARGIN
+%----------------------------------------------------------------------------------------
+
+\makeatletter
+
+%\renewcommand\section{%
+ %\def\@seccntformat##1{\csname the##1\endcsname\hspace{1em} \color{mln-green}}
+ %\@startsection{\textcolor{mln-green}}
+%}
+
+%\renewcommand\subsection{%
+% \def\@seccntformat##1{\csname the##1\endcsname\hspace{1em} \color{mln-brown}}
+% \@startsection{\textcolor{mln-brown}}
+%}
+
+                  
+\renewcommand{\section}{\@startsection{section}{1}{\z@}
+{-4ex \@plus -1ex \@minus -.4ex}
+{1ex \@plus.2ex }
+{\normalfont\large\sffamily\bfseries\color{mln-green}}}
+
+\renewcommand{\subsection}{\@startsection {subsection}{2}{\z@}
+{-3ex \@plus -0.1ex \@minus -.4ex}
+{0.5ex \@plus.2ex }
+{\normalfont\sffamily\bfseries\color{mln-brown}}}
+
+\renewcommand{\subsubsection}{\@startsection {subsubsection}{3}{\z@}
+{-2ex \@plus -0.1ex \@minus -.2ex}
+{0.2ex \@plus.2ex }
+{\normalfont\small\sffamily\bfseries\color{gray}}}                        
+
+\renewcommand\paragraph{\@startsection{paragraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{0.1ex}
+{\normalfont\small\sffamily\bfseries\color{gray}}}
+
+\renewcommand\subparagraph{\@startsection{subparagraph}{4}{\z@}
+{-2ex \@plus-.2ex \@minus .2ex}
+{0.1ex}
+{\normalfont\small\sffamily\bfseries\color{gray}}}
+
+
+%----------------------------------------------------------------------------------------
+%	CHAPTER HEADINGS
+%----------------------------------------------------------------------------------------
+
+\newcommand{\thechapterimage}{}
+\newcommand{\chapterimage}[1]{\renewcommand{\thechapterimage}{#1}}
+\def\thechapter{\arabic{chapter}}
+\def\@makechapterhead#1{
+\thispagestyle{empty}
+{\centering \normalfont\sffamily
+\ifnum \c@secnumdepth >\m@ne
+\if@mainmatter
+\startcontents
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+
+\node[anchor=north west,inner sep=0pt] at (0,0) {\includegraphics[width=\paperwidth]{\thechapterimage}};
+
+\draw[anchor=west] (3cm,-3cm) node [rounded corners=25pt,fill=white,fill opacity=.6,text opacity=1,draw=mln-green,draw opacity=1,line width=2pt,inner sep=15pt]{\huge\sffamily\bfseries\textcolor{black}{ 
+\begin{minipage}{17cm}
+\thechapter\ .\ #1
+\end{minipage}
+\vphantom{plPQq}\makebox[22cm]{}}};
+
+\draw[anchor=west] (1cm,-8cm) node [rounded corners=0pt,fill=white,fill opacity=.6,text opacity=1,draw=mln-green,draw opacity=1,line width=0pt,inner sep=15pt]{\huge\sffamily\bfseries\textcolor{mln-green}{ 
+\begin{minipage}{17cm}
+\printcontents{l}{1}{\setcounter{tocdepth}{1}}
+\end{minipage}
+\vphantom{plPQq}\makebox[22cm]{}}};
+
+%Commenting the 3 lines below removes the small contents box in the chapter heading
+%\draw[fill=white,opacity=.6] (1cm,-10cm) rectangle (20cm,-6.5cm);
+%\node[anchor=north west] at (1cm,-6cm) {\parbox[t][8cm][t]{18cm}{\color{mln-green}\notmalsize\bfseries\flushleft \printcontents{l}{1}{\setcounter{tocdepth}{1}}}}; % \setcounter{tocdepth}{1}, mettre 2 pour avoir les sous section, etc
+
+%\begin{minipage}
+%\parbox[t][8cm][t]{18cm}{\color{mln-green}\notmalsize\bfseries\flushleft %\printcontents{l}{1}{\setcounter{tocdepth}{1}}}
+%end{minipage}
+
+\end{tikzpicture}};
+\end{tikzpicture}}\par\vspace*{230\p@}
+\fi
+\fi
+}
+\def\@makeschapterhead#1{
+\thispagestyle{empty}
+{\centering \normalfont\sffamily
+\ifnum \c@secnumdepth >\m@ne
+\if@mainmatter
+\startcontents
+\begin{tikzpicture}[remember picture,overlay]
+\node at (current page.north west)
+{\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west] at (-4pt,4pt) {\includegraphics[width=\paperwidth]{\thechapterimage}};
+\draw[anchor=west] (5cm,-9cm) node [rounded corners=25pt,fill=white,opacity=.7,inner sep=15.5pt]{\huge\sffamily\bfseries\textcolor{black}{\vphantom{plPQq}\makebox[22cm]{}}};
+\draw[anchor=west] (5cm,-9cm) node [rounded corners=25pt,draw=mln-green,line width=2pt,inner sep=15pt]{\huge\sffamily\bfseries\textcolor{black}{#1\vphantom{plPQq}\makebox[22cm]{}}};
+\end{tikzpicture}};
+\end{tikzpicture}}\par\vspace*{230\p@}
+\fi
+\fi
+}
+\makeatother
 
 
