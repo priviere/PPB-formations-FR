@@ -8,6 +8,7 @@ Les documents sont téléchargeables ci-dessous.
 
 Vous êtes autorisé à partager et à adapter leurs contenus tant que vous citez les auteurs des documents ou des codes et indiquez si des changements ont eu lieu, que vous ne faites pas un usage commercial des documents ou des codes, tout ou partie du matériel le composant, que vous partagez dans les mêmes conditions votre travail issu de ces documents ou ces codes. 
 Plus d’informations [ici](http://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr).
+Le copyright est indiqué avec la licence.
 
 ## Le cycle de formations
 
