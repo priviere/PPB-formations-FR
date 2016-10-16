@@ -6,6 +6,7 @@ que vous ne faites pas un usage commercial de ce code, tout ou partie du
 matériel le composant, que vous partagez dans les mêmes conditions votre code issu de ce code.
 
 Pour citer les codes: 
-Document maitre du Cycle de formations sur la gestion dynamique de la biodiversité
+Cycle de formations sur la gestion dynamique de la biodiversité
 cultivée dans les Maisons des Semences Paysannes en réseau. 
-Code tex. Version A METTRE A JOUR. Licence CC BY NC SA.
+Code tex de la présentation du cycle de formations. 
+Version A METTRE A JOUR. Licence CC BY NC SA.
