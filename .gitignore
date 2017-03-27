@@ -12,3 +12,5 @@
 .Rproj.user
 .Rhistory
 .RData
+*.nav
+*.snm
