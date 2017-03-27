@@ -1,0 +1,184 @@
+\subsection{Types d'analyse} 
+
+\begin{frame}
+\frametitle{Différents types d'analyse de données}
+
+Les différents types d'analyse (non exhaustif):
+
+\begin{itemize}
+\item sur les données phénotypiques pour
+	\begin{itemize}
+	\item estimer les potentiels génétiques des variétés, environnements, intéractions (principe de génétiques quantitatives)
+	\end{itemize}
+	
+\item sur les données moléculaires pour étudier
+	\begin{itemize}
+	\item la diversité
+	\item l'adaptation et d'évolution
+	\item les déterminismes génétiques
+	\end{itemize}
+
+\item sur les données phénotypiques et moléculaires pour étudier
+	\begin{itemize}
+	\item l'association entre des données phénotypiques et génétiques
+	\end{itemize}
+
+\end{itemize}
+
+\begin{block}{}
+\centering
+Ce sont les statistiques qui permettent de réaliser les analyses
+\end{block}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Les statistiques}
+
+\begin{itemize}
+\item Les statistiques tentent de répondre à une question à partir de modèles mathématiques qui sont censés représenter la réalité. 
+
+\item Un modèle est toujours faux ! Ce n'est qu'une interprétation de la réalité qui est soumis à de nombreuses hypothèses.
+
+\item un modèle répond à une question avec une probabilité
+\end{itemize}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+\frametitle{Données phénotypiques}
+\framesubtitle{Principes de génétique quantitative}
+
+\begin{overprint}
+\onslide<1>\centering\includegraphics[width=.8\textwidth,page=10]{gxe}
+\onslide<2>\centering\includegraphics[width=.8\textwidth,page=11]{gxe}
+\onslide<3>\centering\includegraphics[width=.8\textwidth,page=12]{gxe}
+\onslide<4>\centering\includegraphics[width=.8\textwidth,page=13]{gxe} 
+\onslide<5>\centering\includegraphics[width=.8\textwidth,page=14]{gxe} 
+\onslide<6>\centering\includegraphics[width=.8\textwidth,page=15]{gxe} 
+\onslide<7>\centering\includegraphics[width=.8\textwidth,page=16]{gxe} 
+\onslide<8>\centering\includegraphics[width=.8\textwidth,page=17]{gxe} 
+\onslide<9>\centering\includegraphics[width=.8\textwidth,page=18]{gxe} 
+\onslide<10>\centering\includegraphics[width=.8\textwidth,page=19]{gxe} 
+\onslide<11>\centering\includegraphics[width=.8\textwidth,page=20]{gxe} 
+\onslide<12>\centering\includegraphics[width=.8\textwidth,page=21]{gxe} 
+\onslide<13>\centering\includegraphics[width=.8\textwidth,page=22]{gxe} 
+\end{overprint}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Données phénotypiques}
+\framesubtitle{Exemples}
+
+Comparaisons de moyennes dans les fermes : les populations sont elles différentes entre elles ?
+
+\begin{columns}
+
+\begin{column}{.6\textwidth}
+\begin{center}
+\includegraphics[page=1,width=.9\textwidth]{PPBstats_unnamed-chunk-25-1} \tiny \cite{PPBstats_unnamed-chunk-25-1}
+\end{center}
+\end{column}
+
+\begin{column}{.4\textwidth}
+Quand on donne une information, il y a un risque de se tromper : c'est alpha.\\
+Ici, alpha = 0.1 : j'ai 10\% de risque de me tromper.\\
+~\\
+Les variétés qui partagent la même ligne \textbf{NE sont PAS} différentes.
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Données phénotypiques}
+\framesubtitle{Exemples}
+
+Analyse des interactions $G \times E $ dans le réseau d'essais :  quelles populations puis-je tester dans ma ferme ?
+
+\begin{columns}
+
+\begin{column}{.4\textwidth}
+\begin{itemize}
+\item les fermes qui sont les plus proches des vôtres (c'est à dire où les populations que vous avez chez vous ont eu un comportement proche dans une autre ferme)
+\item Il est également possible de prédire le passé ...
+\end{itemize}
+\end{column}
+
+\begin{column}{.6\textwidth}
+\begin{center} \includegraphics[width=.8\textwidth]{PPBstats_unnamed-chunk-46-1} \tiny \cite{PPBstats_unnamed-chunk-46-1}\end{center}
+\end{column}
+
+\end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Données moléculaires}
+
+\yo{Objectif}: Mieux comprendre:
+
+\begin{itemize}
+\item quelle est la structure de la diversité génétique au sein des variétés locales ou paysannes,
+\item comment la diversité est maintenue au cours des processus de sélection,
+\item comment la diversité est mobilisée pour permettre aux populations de répondre à la sélection.
+\end{itemize}
+
+Pour cela, il faut
+\begin{itemize}
+\item des données phénotypiques
+\item des données moléculaires: 90 marqueurs SNP suffisent: par exemple 45 neutres et 45 proches des gènes de précocité de floraison.
+\end{itemize}
+
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Données phénotypiques et moléculaires}
+
+\yo{Objectif}: associer un marqueur à un caractère phénotypique. 
+On parle de génétique d'association, de détéction de QTL (Quantitative Trait Loci). 
+
+Pour cela, il faut:
+\begin{itemize}
+\item des données phénotypiques (\guill{phénomique})
+\item des données moléculaires (\guill{génomique}: \guill{puces} de milliers de marqueurs SNPs (420 000 chez le blé tendre))
+\end{itemize}
+
+\vspace{.5cm}
+
+\begin{overprint}
+\onslide<2>
+\begin{center}
+\begin{tabular}{ccccccc}
+\hline
+Ind & pmg & m1 & m2 & m3 & m4 & m5\\
+\hline
+Ind 1 & 55 & \cellcolor{mln-green} A & C & \cellcolor{mln-green} G & G & T \\
+Ind 2 & 50 & T & C & C & G & A \\
+Ind 3 & 45 & C & G & A & A & T \\
+Ind 4 & 40 & T & T & A & A & C \\
+Ind 5 & 35 & G & A & C & G & C \\
+\hline
+\end{tabular}
+\end{center}
+
+\onslide<3>
+Ces associations statistiques sont dépendantes de la structure des populations, du nombre d'individus, du nombre de marqueurs ...
+\end{overprint}
+
+\end{frame}
+
+
