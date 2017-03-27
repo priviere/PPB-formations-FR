@@ -13,7 +13,7 @@ Le copyright est indiqué avec la licence.
 ## Le cycle de formations
 
 - Ce cycle de formations comporte 10 volets. 
-Chaque fiche de ces volets représente un chapitre du document complet téléchargerable en pdf [ici](https://www.dropbox.com/s/4w1r9tmbc7lubsl/cycle_formations.pdf?dl=0).
+Chaque fiche de ces volets représente un chapitre du document complet téléchargerable en pdf [ici](https://www.dropbox.com/sh/ijbjiyfofpqugxm/AAD8u7t4B2BYunnU44FOlUcla?dl=0).
 Les présentations sont des documents indépendants.
 
 Titre | Fiche | Présentation 
@@ -24,10 +24,10 @@ Formation B. Gestion, mobilisation et brassage de la diversité  | [tex]() | [te
 Formation C. Evaluation et sélection agronomique  | [tex]() | [tex]() / [pdf]()
 Formation D. Evaluation et sélection organoleptique  | [tex]() | [tex]() / [pdf]()
 Formation E. Evaluation bilan  | [tex]() | [tex]() / [pdf]()
-Formation Fa. Outils de gestion des données : aspects techniques  | [tex]() | [tex]() / [pdf]()
-Formation Fb. Outils de gestion des données : aspects règles d’usage  | [tex]() | [tex]() / [pdf]()
+Formation F. Outils de gestion des données : aspects techniques  | [tex]() | [tex]() / [pdf]()
 Formation G. Outils d'analyse des données  | [tex]() | [tex]() / [pdf]()
-Formation H. Règles et droits d’usage collectifs  | [tex]() | [tex]() / [pdf]()
+Formation Ha. Règles et droits d’usage collectifs  | [tex]() | [tex]() / [pdf]()
+Formation Hb. Règles d'usage relatives aux otils de gestion et d'analyse des données  | [tex]() | [tex]() / [pdf]()
 
 
 - Les images, les figures et les photos utilisées dans les pdf sont disponibles en téléchargement au format odp, pdf ou png [ici](https://www.dropbox.com/sh/sa23b3psd5nypcc/AADDpe_eBtKcvxcjoMYMlPiAa?dl=0).
