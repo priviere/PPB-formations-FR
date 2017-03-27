@@ -24,10 +24,10 @@ Formation B. Gestion, mobilisation et brassage de la diversité  | [tex]() | [te
 Formation C. Evaluation et sélection agronomique  | [tex]() | [tex]() / [pdf]()
 Formation D. Evaluation et sélection organoleptique  | [tex]() | [tex]() / [pdf]()
 Formation E. Evaluation bilan  | [tex]() | [tex]() / [pdf]()
-Formation F. Outils de gestion des données : aspects techniques  | [tex]() | [tex]() / [pdf]()
+Formation F. Outils de gestion des données  | [tex]() | [tex]() / [pdf]()
 Formation G. Outils d'analyse des données  | [tex]() | [tex]() / [pdf]()
 Formation Ha. Règles et droits d’usage collectifs  | [tex]() | [tex]() / [pdf]()
-Formation Hb. Règles d'usage relatives aux otils de gestion et d'analyse des données  | [tex]() | [tex]() / [pdf]()
+Formation Hb. Règles d'usage relatives aux outils de gestion et d'analyse des données  | [tex]() | [tex]() / [pdf]()
 
 
 - Les images, les figures et les photos utilisées dans les pdf sont disponibles en téléchargement au format odp, pdf ou png [ici](https://www.dropbox.com/sh/sa23b3psd5nypcc/AADDpe_eBtKcvxcjoMYMlPiAa?dl=0).
