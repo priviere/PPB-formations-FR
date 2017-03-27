@@ -8,6 +8,7 @@ matériel le composant, que vous partagez dans les mêmes conditions votre code 
 Pour citer les codes: 
 Cycle de formations sur la gestion dynamique de la biodiversité cultivée 
 dans les Maisons des Semences Paysannes en réseau. 
+Réseau Semences Paysannes.
 Code tex de la version décrivant les photos, les images et les figures utilisées 
 dans le cycle de formation. 
 Version 2 du 17 septembre 2106. 

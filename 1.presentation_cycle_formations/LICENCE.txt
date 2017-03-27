@@ -1,4 +1,5 @@
-﻿Copyright Réseau Semences Paysannes.
+﻿Copyright Réseau Semences Paysannes et Institut National de la Recherche Agronomique.
+
 Les codes de ce dossier sont sous licence creative commons BY-NC-SA. 
 Vous êtes autorisé à partager et à adapter son contenu tant que vous citez 
 les auteurs de ce document et indiquez si des changements ont eu lieu, 
@@ -8,5 +9,6 @@ matériel le composant, que vous partagez dans les mêmes conditions votre code 
 Pour citer les codes: 
 Cycle de formations sur la gestion dynamique de la biodiversité
 cultivée dans les Maisons des Semences Paysannes en réseau. 
+Réseau Semences Paysannes et Institut National de la Recherche Agronomique.
 Code tex de la présentation du cycle de formations. 
 Version A METTRE A JOUR. Licence CC BY NC SA.
