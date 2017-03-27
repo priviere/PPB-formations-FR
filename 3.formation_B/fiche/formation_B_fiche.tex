@@ -1,0 +1,258 @@
+\input{../../ressources/fiche_structure.tex}
+\input{../../ressources/common_structure.tex}
+\input{../../ressources/licence.tex}
+\graphicspath{{../../ressources/figures/}}
+\input{../version.tex}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Define block styles for the figure
+\tikzstyle{block} = [rectangle, draw, fill=mln-green, text width=1cm, text centered, rounded corners, minimum height=1cm]
+\tikzstyle{line} = [draw, -latex']
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pagestyle{empty}
+
+\begin{center}
+
+\headtitlepagefiche{\logoRSPDEAP}{\formationB}
+
+\vfill
+
+\large
+Version \versionFB~du \dateversionFB
+
+\vfill
+
+\normalsize
+
+Pierre~Rivière\up{1*} \hspace{.5cm}
+Sophie~Pin\up{2} \hspace{.5cm}
+[... les paysans ...]\up{1} \hspace{.5cm}
+[... les animateurs locaux ...]\up{1} \hspace{.5cm}
+Mathieu~Thomas\up{2} \hspace{.5cm}
+Isabelle~Goldringer\up{2} \\
+
+\end{center}
+
+\small
+\noindent\up{1}~Réseau Semences Paysannes, 3, avenue de la Gare F-47190 Aiguillon, France 
+
+\noindent\up{2}~INRA, Génétique Quantatitive et Evolution, ferme du Moulon F-91190 Gif sur Yvette, France
+
+\noindent\up{*} \textbf{Contact}: \href{mailto:pierre@semencespaysannes.org}{\textcolor{mln-green} {pierre@semencespaysannes.org}}
+
+\noindent\textbf{Contributions}: PR a rédigé la fiche tehnique et la présentation à partir des travaux de PR, SP, MT et IG. IG a relu et augmenté les documents.
+
+\normalsize
+
+\vfill
+
+\licencefiche{\formationB}{\RSP, \INRA}{\versionFB~du \dateversionFB}
+
+\newpage ~\\ \newpage \tableofcontents \newpage \pagestyle{plain}
+
+
+\section*{Descriptif de la formation}
+\input{0.descriptif_formation_B}
+
+
+\section{Méthodologie de la sélection}
+
+\begin{figure}[H]
+\includegraphics[width=\textwidth, page=1]{methodo-globale}
+\caption{Programme de sélection dynamique et récurrente}
+\end{figure}
+
+
+\section{Principes de biologie moléculaire}
+
+note sur les marqueurs, comment ça marche
+
+Quels types d'analyse possible : diversité, association, QTL, etc
+
+Il peut y avoir autour de 5 cross-over par chromosome ?!? Combien de cross over par chromosomes par espcèes
+
+simuler le nombre de combi possible
+
+\section{Gestion de la biodiversité cultivée}
+
+\subsection{Gestion \exsitu}
+
+\subsubsection{Dans les \CRBs}
+
+\subsubsection{Dans les \MSPs}
+
+
+\subsection{Gestion \insitu}
+
+\subsubsection{Dans des réseaux de \CRBs}
+
+cf résultats équipe isa, cf papier jérome 2011
+
+\subsubsection{Dans des réseaux de \MSPs}
+
+résultats abdul et mathieu cf wp2 solibam
+
+résultats de ma thèse
+
+
+\section{Mobilisation de la biodiversité cultivée}
+
+centre RG tomate
+%http://w3.avignon.inra.fr/rg_tomate/presentation_reseau.html
+
+
+dans \CRBs
+
+dans \MSPs
+
+cf BBD indicateur d'Isabelle
+
+\section{Brassage de la biodiversité cultivée}
+
+\subsection{Les croisements}
+
+\subsubsection{Lois de Mendel}
+
+Mendel est un moine ??? qui a travaillé sur les poids et à découvert les lois de l'hérédité.
+C'est à dire les lois qui permettent de prédire la ségrégation des caractères sachant deux parents.
+C'est à dire la proportion de chaque parent que l'on retourve dans les générations suivantes.
+
+
+Ajouter en annexe les fiches que l'on a faite quand on envoi les graines du Moulon chez les paysans
+
+
+\begin{figure}[H]
+\begin{center}
+\begin{tikzpicture}[node distance = 2.5cm, auto]
+    % F0
+    \node [block] (P1) {AA};
+    \node [block, right of = P1] (P2) {BB};
+	
+	% F1
+    \node [block, below of = P1, right of = P1] (F1) {AB};
+    \path [line] (P1) -- (F1);
+    \path [line] (P2) -- (F1);
+
+	% F2
+    \node [block, below of = F1, right of = F1] (F2a) {AB};
+    \node [block, right of = F2a] (F2b) {AA};
+    \node [block, left of = F2a] (F2c) {BA};
+    \node [block, left of = F2c] (F2d) {BB};
+
+    \path [line] (F1) -- (F2a);
+    \path [line] (F1) -- (F2b);
+    \path [line] (F1) -- (F2c);
+    \path [line] (F1) -- (F2d);
+
+	% F3
+    \node [block, below of = F2b] (F3a) {AA};
+    \node [block, below of = F2d] (F3b) {BB};
+    
+    \node [block, below of = F2a, right of = F2a] (F3c) {AB};
+    \node [block, right of = F3c] (F3d) {AA};
+    \node [block, left of = F3c] (F3e) {BA};
+    \node [block, left of = F3e] (F3f) {BB};
+
+    \path [line] (F2b) -- (F3a);
+    \path [line] (F2d) -- (F3b);
+    
+    \path [line] (F2a) -- (F3c);
+    \path [line] (F2a) -- (F3d);
+    \path [line] (F2a) -- (F3e);
+    \path [line] (F2a) -- (F3f);
+
+\end{tikzpicture}
+\end{center}
+\caption{Ségregation des allèles suite à un croisement bi-parental}
+\label{function_relations}
+\end{figure}
+
+
+graph évolution nombre hétéro avec CCP.R
+
+
+\subsubsection{Croisements bi-parentaux}
+
+\subsubsection{Croisements multi-parentaux}
+
+Les croisements bi-parentaux sont le fait de croiser plusiers parents deux à deux et de mélanger les graines issues de ces croisements.
+Un plan de croisement est présenté dans le tableau \ref{mutli-cross}.
+Ce travail est très lourd est peut être réalisé par des équipes de recherche avec qui les collectifs paysans collaborent.
+
+\begin{table}[H]
+\begin{tabular}{c|ccccccc}
+\hline
+& Parent 1 & Parent 2 & Parent 3 & Parent 4 & $\ldots$ & Parent $n-1$ & Parent $n$ \\
+\hline
+Parent 1 &  & C-$[1]$-$[2]$ & C-$[1]$-$[3]$ & C-$[1]$-$[4]$ & $\ldots$ & C-$[1]$-$[n-1]$ & C-$[1]$-$[n]$\\
+Parent 2 &  &  & C-$[2]$-$[3]$ & C-$[2]$-$[4]$ & $\ldots$ & C-$[2]$-$[n-1]$ & C-$[2]$-$[n]$\\
+Parent 3 &  &  &  & C-$[3]$-$[4]$ & $\ldots$ & C-$[3]$-$[n-1]$ & C-$[3]$-$[n]$\\
+Parent 4 &  &  &  & & $\ldots$ & C-$[4]$-$[n-1]$ & C-$[4]$-$[n]$\\
+$\vdots$ & & & & & $\vdots$ & $\vdots$ & $\vdots$ \\
+Parent $n-1$ &  &  &  &  &  &  & C-$[n-1]$-$[n]$\\
+\hline
+\end{tabular}
+\caption{Exemple d'un plan de croisements avec $n$ parents. 
+C-[1]-[4]: croisement issu du parent 1 et du parent 4.
+Il y a en tout $(\frac{n(n-1)}{2})$ croisements réalisés.}
+\label{mutli-cross}
+\end{table}
+
+
+\begin{figure}
+mettre graph issu de CCP.R
+le faire vec knitr et trouver un moyen de les mettre en annexes directement!
+\caption{Evolution du nombre de croisements en fonction du nombre de parents utilisés.}
+\end{figure}
+
+\subsection{Les mélanges}
+
+cf fonction mixture.R
+
+
+\subsection{Les populations males-stériles}
+
+cf fonction PS.R 'expliquer le nom historique!)
+
+\subsection{Les autres méthodes qui existent}
+
+Faire des CCP et des croisements localement? Un programme par région?
+prendre des parents "locaux" + un peu d'exotique?
+
+cf BBD indicateur d'Isabelle pour choisir les parents. Les multiplier avant de les croiser? Si oui (comme JFB), combien de temps? Croiser directement? (voir ce qu'en pense Isabelle)
+
+Demander à Fred (ITAB) s'il a des réfs là dessus
+
+Refaire ça tout les ??? ans? Car on peut rebrasser des poops issues du programme
+
+En lien avec la recherche pour faire ces croisements
+F1 dans la station? A voir avec les collectifs locaux
+
+CCP dans une pluus grande parcelle, cf 10 000 ôur Ne (quel Ne pour les autres espèces? Tomate (demander à Fred, gauthier?)?) à 300 grains au m2 => environ 35 m2
+
+
+blé résistant à la carie (cf travail hongrie de solibam)
+
+Quid de la sélection clonale pour les arbres? A creuser !
+
+> Salut Isa,
+> j'ai qql questions pour préparer la formation
+>
+> - Combien d'allèles par gène en moyenne chez le blé? Ou un ordre de grandeur?
+Aucune idée et je ne pense pas qu'il y ait tellement d'info la-dessus, ca dépend de ce que
+tu considère comme un gène ... et comme un allèle (séquence différente ou bien exprimant
+une fonction différente).
+> - Chez le blé: combien de gènes ? Ou un ordre de grandeur!
+Je ne sais pas non plus, désolée, il faut chercher sur internet ...
+Tu t'en sert pour quoi faire ?
+
+
+\input{../../ressources/remerciements.tex}
+
+\end{document}
+

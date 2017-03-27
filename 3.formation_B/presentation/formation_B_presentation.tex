@@ -1,0 +1,75 @@
+\input{../../ressources/presentation_structure.tex}
+\input{../../ressources/common_structure.tex}
+\input{../../ressources/licence.tex}
+\graphicspath{{../../ressources/figures/}}
+\input{../version.tex}
+
+% 9h45 => 13h
+% pause après biomol + zapper evaluation phéno et ACP
+
+\title[Réseau Semences Paysannes] { \Large \titre \\ \large \formationB }
+
+\author[P.Rivière]
+{
+\small % \normalsize par défaut
+\textcolor{mln-green}{Pierre~Rivière}\inst{1} \and
+Sophie~Pin\inst{2} \and
+Patrick~de~Kochko\inst{1} \and
+[... les paysans ...]\inst{1} \and
+Abdul~Rheman~Khan\inst{2} \and
+Mathieu~Thomas\inst{2} \and
+Isabelle~Goldringer\inst{2}
+}
+
+\institute[\href{mailto:pierre@semencespaysannes.org}{pierre@semencespaysannes.org}]
+{
+\tiny % \scriptsize par défaut
+~\inst{1}~Réseau Semences Paysannes, 3, avenue de la Gare F-47190 Aiguillon, France
+\and
+\vskip-2mm
+~\inst{2}~INRA, Génétique Quantatitive et Evolution, ferme du Moulon F-91190 Gif sur Yvette, France
+}
+
+\date[\tiny V\versionFB~du \dateversionFB] { \small Formation du \today }
+
+\titlegraphic
+{
+\includegraphics[height=0.08\textwidth]{Logo-RSP.jpg}
+\hspace{1cm}
+\includegraphics[width=0.15\textwidth]{Logo-UMRGV.jpg}
+}
+
+
+\begin{document}
+\maketitle
+
+% pour tout ce qui est tableofcontents
+% http://mirror.ox.ac.uk/sites/ctan.org/macros/latex/contrib/beamer/doc/beameruserguide.pdf
+
+\input{1.introduction} 
+
+\input{2.biomol} 
+
+\input{3.gestion}
+
+\input{4.mobilisation}
+
+\input{5.brassage} 
+
+\input{6.conlusion-perspectives} 
+
+
+\input{../../ressources/presentation_common_final_diapo}
+\licencepresentation{\formationB}{\RSP, \INRA}{\versionFB~du \dateversionFB}
+
+
+%\usebackgroundtemplate{}
+%\begin{frame}[allowframebreaks]
+%\frametitle{Bibliographie}
+%\bibliography{../../ressources/biblio} 
+%\bibliographystyle{../../ressources/fieldcrops_fr}
+%\end{frame}
+
+
+
+\end{document}

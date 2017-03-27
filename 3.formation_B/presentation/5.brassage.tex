@@ -1,0 +1,821 @@
+\section{Brassage de la biodiversité cultivée}
+\begin{frame}\tableofcontents[currentsection,currentsubsection,subsectionstyle=show/show/hide]\end{frame}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+
+\yo{Brasser} la diversité permet d'\yo{augmenter} la diversité et ainsi d'avoir plus de possibilité pour sélectionner.
+
+\begin{columns}
+
+\begin{column}{.4\textwidth}
+
+Plusieurs stratégies sont possibles:
+
+\begin{itemize}
+\item lignées pures
+\item mélange de lignées pures
+\item populations
+\item mélange de populations
+\item croisements  bi-parentaux 
+\item croisement multi-parentaux (CCP)
+\item population mâles-stériles
+\end{itemize}
+
+\end{column}
+
+\begin{column}{.6\textwidth}
+\begin{center}
+\includegraphics[width=\textwidth]{gradiant_brassage} \\
+\end{center}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Un levier pour favoriser la sélection}
+
+\begin{itemize}
+\item \yo{Sélection naturelle}: les individus les plus adaptés aux pratiques, au sol, à l'environnement, se reproduisent plus : évolution de la fréquence des individus au sein de la population
+
+\item \yo{Sélection intra}: Sélection à l'intérieur d'un groupe de plantes
+
+\item \yo{Sélection inter}: Sélection entre groupe de plantes
+
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{cccc}
+\hline
+Type de diversité | sélection & naturelle & intra & inter \\
+\hline
+Lignées pures & $--$ & $--$ & $+++$ \\
+\hline
+Mélanges de lignées pures & $+$ & $+$ & $+++$ \\
+\hline
+Populations & $++$ & $++$ & $+++$ \\
+\hline
+Mélanges de populations & $+++$ & $+++$ & $++$ \\
+\hline
+Croisements bi-parentaux & $+++$ & $+++$ & $++$ \\
+\hline
+Croisements multi-parentaux & $++++$ & $++++$ & $++$ \\
+\hline
+Populations mâles-stériles & $+++++$ & $+++++$ & $++$ \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Le brassage est contraint par l'espèce}
+
+\begin{center}
+\includegraphics[width=.8\textwidth,page=6]{genealogie_ble}
+\end{center}
+
+% On peut tenter interspécifique!
+
+\end{frame}
+
+\subsection{Lignées pures}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Les lignées pures}
+
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+
+\begin{itemize}
+\item Au sein d'une lignée pure, toutes les plantes sont identiques.
+\item Si elles se croisent entre elles, les plantes issues du croisement sont identiques aux plantes parents.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ccc}
+\hline
+\multicolumn{3}{c}{sélection} \\
+naturelle & intra & inter \\
+\hline
+$--$ & $--$ & $+++$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{column}
+
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth,page=1]{brassage_biodiv}
+\end{column}
+\end{columns}
+
+
+\end{frame}
+
+
+\subsection{Mélanges de lignées pures}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Les mélanges de lignées pures}
+
+\begin{itemize}
+\item Au sein d'un mélange de lignées pures, il y a différentes plantes.
+\item Les plantes différents peuvent se croiser et donner de nouvelles plantes (i.e. de nouvelles combinaisons d'allèles).
+\end{itemize}
+
+
+\begin{columns}
+
+\begin{column}{.5\textwidth}
+
+\begin{center}
+\begin{tabular}{ccc}
+\hline
+\multicolumn{3}{c}{sélection} \\
+naturelle & intra & inter \\
+\hline
+$+$ & $+$ & $+++$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{column}
+
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth,page=2]{brassage_biodiv}
+\end{column}
+\end{columns}
+
+% cf fonction mixture.R
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Les mélanges de lignées pures}
+
+\begin{columns}
+\begin{column}{.3\textwidth}
+
+\begin{itemize}
+\item Le taux de croisement dépend des espèces.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ p{.5\textwidth} p{.5\textwidth} }
+\hline
+Espèces & Taux \\
+\hline
+Blé tendre & 5\% \\
+\hline
+\end{tabular}	
+\end{center}
+
+\end{column}
+
+\begin{column}{.7\textwidth}
+\includegraphics[width=\textwidth,page=3]{brassage_biodiv}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+
+
+\subsection{Populations}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Les populations}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+
+\begin{itemize}
+\item Au sein d'une populations, il y a de nombreuses plantes différentes.
+\item Les plantes différentes peuvent se croiser et donner de nouvelles plantes (i.e. de nouvelles combinaisons d'allèles).
+Le taux de croisement dépend des espèces.
+\end{itemize}
+
+
+\begin{center}
+\begin{tabular}{ccc}
+\hline
+\multicolumn{3}{c}{sélection} \\
+naturelle & intra & inter \\
+\hline
+$++$ & $++$ & $+++$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{column}
+
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth,page=4]{brassage_biodiv}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\subsection{Mélanges de populations}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Les mélanges de populations}
+
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+
+\begin{itemize}
+\item Au sein d'un mélange de populations, il y a de nombreuses plantes différentes.
+\item Les plantes différentes peuvent se croiser et donner de nouvelles plantes (i.e. de nouvelles combinaisons d'allèles).
+Le taux de croisement dépend des espèces.
+\end{itemize}
+
+\begin{center}
+\begin{tabular}{ccc}
+\hline
+\multicolumn{3}{c}{sélection} \\
+naturelle & intra & inter \\
+\hline
+$+++$ & $+++$ & $++$ \\
+\hline
+\end{tabular}
+\end{center}
+
+\end{column}
+
+\begin{column}{.5\textwidth}
+\includegraphics[width=\textwidth,page=5]{brassage_biodiv}
+\end{column}
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Les croisements}
+
+Il existe des méthodes interventionnistes pour brasser la diversité comme:
+
+\begin{itemize}
+\item les croisements bi-parentaux
+\item les croisements multi-parentaux
+\item les populations mâles-stériles
+\end{itemize}
+
+Ces méthodes permettent 
+
+\begin{itemize}
+\item de controler et de diriger les croisements
+\item de gagner du temps
+\end{itemize}
+
+\end{frame}
+
+
+
+\subsection{Croisements bi-parentaux}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Croisements bi-parentaux: loi de Mendel}
+
+\begin{columns}
+\begin{column}{.5\textwidth}
+Mendel (1822 - 1884) est un moine tchèque qui a travaillé sur les petits poids et a découvert les lois de l'hérédité.
+Ces lois permettent de prédire la ségrégation des caractères sachant deux parents.
+C'est à dire la proportion de chaque parent que l'on retrouve dans les générations suivantes.
+\end{column}
+
+\begin{column}{.5\textwidth}
+
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=.6\textwidth]{Gregor_Mendel_oval} &  \rotatebox{90}{\tiny CC BY 4.0. Itlis, Hugo} \\
+Gregor Mendel & \\
+\end{tabular}
+\end{center}
+
+
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Croisements bi-parentaux: 1 locus, 2 allèles (loi de Mendel)}
+
+
+\begin{center}
+
+Deux parents diploides \fcolorbox{black}{mln-green}{AA} et \fcolorbox{black}{mln-green}{aa} que l'on croise vont donner:
+
+\begin{tabular}{|c|c|}
+\hline
+\textbf{F1} & A  \\
+\hline
+a & Aa (ou aA)\\
+\hline
+\end{tabular}
+
+\vspace{.5cm}
+
+100\% de Aa (ou aA) qui s'autoféconde : \\
+
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{F2}& A & a \\
+\hline
+A & \cellcolor{mln-green} AA & Aa \\
+\hline
+a & aA & \cellcolor{mln-green} aa\\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{columns}
+
+\begin{column}{.3\textwidth}
+\begin{center}
+25\% de AA qui s'autoféconde : \\
+\begin{tabular}{|c|c|}
+\hline
+\textbf{F3}& A  \\
+\hline
+A & \cellcolor{mln-green} AA \\
+\hline
+\end{tabular}
+\end{center}
+\end{column}
+
+\begin{column}{.3\textwidth}
+\begin{center}
+50\% de  Aa (ou aA) qui s'autoféconde : \\
+\begin{tabular}{|c|c|c|}
+\hline
+\textbf{F3}& A & a \\
+\hline
+A & \cellcolor{mln-green} AA & Aa \\
+\hline
+a & aA & \cellcolor{mln-green} aa\\
+\hline
+\end{tabular}
+\end{center}
+\end{column}
+
+\begin{column}{.3\textwidth}
+\begin{center}
+25\% de aa qui s'autoféconde : \\
+\begin{tabular}{|c|c|}
+\hline
+\textbf{F3}& a  \\
+\hline
+a & \cellcolor{mln-green} aa \\
+\hline
+\end{tabular}
+\end{center}
+\end{column}
+
+\end{columns}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Croisements bi-parentaux: 1 locus, 2 allèles (loi de Mendel)}
+
+\begin{center}
+\includegraphics[width=.8\textwidth]{segregation_f2}
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Croisements bi-parentaux: 2 locus, 4 allèles (loi de Mendel)}
+
+\begin{center}
+
+Deux parents diploides \fcolorbox{black}{mln-green}{AA BB} et \fcolorbox{black}{mln-green}{aa bb} va donner:
+
+\begin{tabular}{|c|c|}
+\hline
+\textbf{F1} & AA BB \\
+\hline
+aa bb & Aa Bb \\
+\hline
+\end{tabular}
+
+\vspace{.5cm}
+
+100\% de Aa Bb qui s'autoféconde : \\
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline
+\textbf{F2}& AB & Ab & aB & ab \\
+\hline
+AB & \cellcolor{mln-green} AA BB & AA bb & Aa BB & Aa Bb \\
+\hline
+Ab & AA bB & AA bb & Aa bB & Aa bb \\
+\hline
+aB & aA BB & aA Bb & aa BB & aa Bb \\
+\hline
+ab & aA bB & aA bb & aa bB & \cellcolor{mln-green} aa bb \\
+\hline
+\end{tabular}
+
+\vspace{.5cm}
+
+\textbf{F3} ... \\
+
+\end{center}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Croisements bi-parentaux: 3 locus, 6 allèles (loi de Mendel)}
+
+\begin{center}
+
+Deux parents diploides \fcolorbox{black}{mln-green}{AA BB CC} et \fcolorbox{black}{mln-green}{aa bb cc} va donner:
+
+\begin{tabular}{|c|c|}
+\hline
+\textbf{F1} & AA BB CC \\
+\hline
+aa bb cc & Aa Bb Cc \\
+\hline
+\end{tabular}
+
+\vspace{.5cm}
+
+100\% de Aa Bb Cc qui s'autoféconde : \\
+
+\tiny
+\begin{tabular}{|
+c|
+p{.083\textwidth}|
+p{.083\textwidth}|
+p{.081\textwidth}|
+p{.082\textwidth}|
+p{.081\textwidth}|
+p{.083\textwidth}|
+p{.081\textwidth}|
+p{.082\textwidth}|}
+\hline
+\textbf{\normalsize F2}& ABC & AbC & ABc & Abc & aBC & abC & aBc & abc \\
+\hline
+ABC & \cellcolor{mln-green} AA BB CC & AA Bb CC & AA BB Cc & AA Bb Cc & Aa BB CC & Aa Bb CC & Aa BB Cc & Aa Bb Cc \\
+AbC & AA bB CC & AA bb CC & AA bB Cc & AA bb Cc & Aa bB CC & Aa bb CC & Aa bB Cc & Aa bb Cc \\
+ABc & AA BB cC & AA Bb cC & AA BB cc & AA Bb cc & Aa BB cC & Aa Bb cC & Aa BB cc & Aa Bb cc \\
+Abc & AA bB cC & AA bb cC & AA bB cc & AA bb cc & Aa bB cC & Aa bb cC & Aa bB cc & Aa bb cc \\
+aBC & aA BB CC & aA Bb CC & aA BB Cc & aA Bb Cc & aa BB CC & aa Bb CC & aa BB Cc & aa Bb Cc \\
+abC & aA bB CC & aA bb CC & aA bB Cc & aA bb Cc & aa bB CC & aa bb CC & aa bB Cc & aa bb Cc \\
+aBc & aA BB cC & aA Bb cC & aA BB cc & aA Bb cc & aa BB cC & aa Bb cC & aa BB cc & aa Bb cc \\
+abc & aA bB cC & aA bb cC & aA bB cc & aA bb cc & aa bB cC & aa bb cC & aa bB cc & \cellcolor{mln-green} aa bb cc \\
+\hline
+\end{tabular}
+
+\vspace{.5cm}
+
+\normalsize\textbf{F3} ...
+
+
+\end{center}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Brasser la diversité}
+\framesubtitle{Croisements bi-parentaux : loi de Mendel}
+
+\begin{columns}
+
+\begin{column}{.5\textwidth}
+
+\includegraphics[width=.9\textwidth, page=1]{croisement+generations}
+
+\end{column}
+
+\begin{column}{.5\textwidth}
+Chez le blé autogamme\\
+
+~\\
+
+\small
+
+\begin{tabular}{cl}
+\hline
+Génération & taux d'hétérozygote \\
+\hline
+1 & 100\% \\
+2 & 50\% \\
+3 & 25\% \\
+4 & 12,5\% \\
+5 & 6,25\% \\
+6 & 3,125\% \\
+7 & 1,5625\% \\
+$\vdots$ & $\vdots$ \\
+\hline
+\end{tabular}
+
+\normalsize
+
+~\\
+
+Plus le taux d'hétérozygotie est faible, plus les plantes parents et les plantes enfants sont semblables.
+
+\end{column}
+
+\end{columns}
+
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Croisements bi-parentaux: loi de Mendel}
+
+
+Chez une espèce diploide, en faisant l'hypothèse que toutes les combinaisons d'allèles sont possibles (=> valeur sur-estimée car certains locus sont liés).
+
+\begin{center}
+\begin{tabular}{cc}
+\hline
+Nombre de locus & Nombre de combinaison en F2 \\
+\hline
+1 & 4 \\
+2 & 16 \\
+3 & 64 \\
+$x$ & $4^x$ \\
+10 & 1048576 \\
+100 & 1.606938e+60 \\
+\hline
+\end{tabular}
+\end{center}
+
+\begin{block}{}
+\centering\Large
+Le nombre de combinaisons est infini !!!
+\end{block}
+
+%Courbe avec CCP.R (cas particulier de deux parents)
+
+%Dans une pop : plus que deux allèles car pas meme parent tout le temps ...
+\end{frame}
+
+
+
+\subsection{Croisements multi-parentaux}
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Croisements multi-parentaux (CCP)}
+
+Les croisements bi-parentaux (CCP = Composite Cross Population) sont le fait de croiser plusieurs parents deux à deux et de mélanger les graines issues de ces croisements.
+Ce travail est très lourd est peut être réalisé par des équipes de recherche avec qui les collectifs paysans collaborent.
+
+\scriptsize
+\begin{center}
+\begin{tabular}{c|ccccccc}
+\hline
+Parent & 1 & 2 & 3 & 4 & $\ldots$ & $n-1$ & $n$ \\
+\hline
+1 &  & C-$[1]$-$[2]$ & C-$[1]$-$[3]$ & C-$[1]$-$[4]$ & $\ldots$ & C-$[1]$-$[n-1]$ & C-$[1]$-$[n]$\\
+2 &  &  & C-$[2]$-$[3]$ & C-$[2]$-$[4]$ & $\ldots$ & C-$[2]$-$[n-1]$ & C-$[2]$-$[n]$\\
+3 &  &  &  & C-$[3]$-$[4]$ & $\ldots$ & C-$[3]$-$[n-1]$ & C-$[3]$-$[n]$\\
+4 &  &  &  & & $\ldots$ & C-$[4]$-$[n-1]$ & C-$[4]$-$[n]$\\
+$\vdots$ & & & & & $\vdots$ & $\vdots$ & $\vdots$ \\
+Parent $n-1$ &  &  &  &  &  &  & C-$[n-1]$-$[n]$\\
+\hline
+\end{tabular}
+\end{center}
+
+
+\normalsize
+
+Toutes les combinaisons sont envisageables: hybride deux voies, trois voies, etc
+
+\end{frame}
+
+
+\subsection{Populations mâles-stériles}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Populations mâles-stériles}
+
+C'est une population hautement recombinante (dite MAGIC !) qui a de nombreuses combinaisons d'allèles grâce au fort taux d'allogamie.
+
+60 parents ont été croisés deux à deux au départ puis croisé avec Probus, qui détient un gène de stérilité mâle.
+
+\vspace{.5cm}
+
+La moitié des plantes dans la descendance est mâle-stérile => croisement obligatoire par une plante voisine mâle-fertile.
+
+\begin{itemize}
+\item si on ne resème que les plantes mâle-stérile, alors la population est brassée en continue
+\item si on ne sélectionne pas, la stérilité mâle va disparaitre au bout de quelques générations
+\end{itemize}
+
+Cette population est compliquée à gérer mais peut être un moyen de rebrasser un ensemble de variétés locales. % sélection ensuite indispensable !
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Populations mâles-stériles}
+\begin{center}
+\begin{tabular}{cccc}
+\includegraphics[width=.33\textwidth]{epifert-19Mai} & \rotatebox{90}{\tiny Goldringer, Isabelle} & 
+\includegraphics[width=.33\textwidth]{epiMS-19Mai} & \rotatebox{90}{\tiny Goldringer, Isabelle} & 
+\\
+\small Epi fertile & & Epi stérile & \\
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Populations mâles-stériles}
+\begin{center}
+\begin{tabular}{cccc}
+\includegraphics[width=.4\textwidth]{msms5} & \rotatebox{90}{\tiny Enjalbert, Jérôme} & 
+\includegraphics[width=.4\textwidth]{msms4} & \rotatebox{90}{\tiny Enjalbert, Jérôme} & 
+\\
+\end{tabular}
+\end{center}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Populations mâles-stériles}
+
+\begin{center}
+\begin{tabular}{cc}
+\includegraphics[width=.85\textwidth]{msms2} &  \rotatebox{90}{\tiny Lecarpentier, Christophe} \\
+\end{tabular}
+\end{center}
+
+\end{frame}
+
+
+
+
+\subsection{Mise en place d'une stratégie}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Mise en place d'une stratégie: les questions à se poser. Ces étapes font parties de la co-construction du projet.}
+
+
+\begin{itemize}
+\item Est ce que je souhaite contrôler le croisement?
+
+\item Quels moyens? croisement bi-parentaux / CCP
+
+\begin{itemize}
+\item Faire les croisements est long
+\item Plus les populations issues du brassage sont diversifiées, plus elles doivent être cultivées sur de grandes surface.
+10 000 plantes permettent de ne pas perdre trop de diversité.
+Avec 300 grains au m2 $\rightarrow$ environ 35 m2.
+\end{itemize}
+
+\item Croisement en station de recherche ou à la ferme?
+
+\item A quelle échelle? Ferme? Département? Région? 
+
+\item Quelle fréquence pour rebrasser? Tous les 5 ans, 10 ans, 25 ans?
+
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Mise en place d'une stratégie: les questions à se poser. Ces étapes font parties de la co-construction du projet.}
+
+
+\begin{itemize}
+
+\item Quels parents? Quels critères je souhaite associer?
+
+\begin{itemize}
+\item Parents historiques de la région, du pays ou exotique?
+\item Combien de génération avant de croiser? (Cf adaptation au terroir)
+\end{itemize}
+
+Evaluation du programme de \SP~blé:
+
+\begin{itemize}
+\item Population avec une variétés moderne dans les parents: plus de potentiel pour le rendement
+\item Populations issues de croisements variétés anciennes $\times$ variétés de pays: très diversifiées
+\end{itemize}
+
+\end{itemize}
+
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Mise en place d'une stratégie}
+
+\begin{block}{}
+\centering\Large
+De la diversité ... pour sélectionner !!!
+\end{block}
+
+\begin{center}
+\begin{tabular}{cccc}
+\hline
+Type de diversité | sélection & naturelle & intra & inter \\
+\hline
+Lignées pures & $--$ & $--$ & $+++$ \\
+\hline
+Mélanges de lignées pures & $+$ & $+$ & $+++$ \\
+\hline
+Populations & $++$ & $++$ & $+++$ \\
+\hline
+Mélanges de populations & $+++$ & $+++$ & $++$ \\
+\hline
+Croisements bi-parentaux & $+++$ & $+++$ & $++$ \\
+\hline
+Croisements multi-parentaux & $++++$ & $++++$ & $++$ \\
+\hline
+Populations mâles-stériles & $+++++$ & $+++++$ & $++$ \\
+\hline
+\end{tabular}
+\end{center}
+
+
+\end{frame}
+
+
+
+
+\subsection{Exemple d'un projet sur le blé tendre}
+
+\begin{frame}
+\frametitle{Brassage de la biodiversité cultivée}
+\framesubtitle{Dans notre projet sur le blé tendre}
+
+\begin{columns}
+
+	\begin{column}{.6\textwidth}
+	\begin{itemize}
+	\item<1-> 2005-2006 : 90 croisements à la ferme par JFB et l'équipe de recherche. JFB a choisi les parents. Culture sur 5m\up{2}.
+	\item<2-> 2008 : sélection dans les F2. F3 distribuées à des fermes du RSP.
+	\item<3-> 2008 => aujourd'hui : populations cultivées chaque année dans une ou plusieurs fermes.
+Nouvelles populations développées par les paysans à partir de croisements : croisement fait à la station de recherche ou à la ferme, choix des parents par les paysans \dots
+	\end{itemize}
+	\end{column}
+
+	\begin{column}{.4\textwidth}
+	\begin{center}
+	\begin{overprint}
+    \onslide<1> \includegraphics[width=\textwidth,page=1]{croisement}
+    \onslide<2> \includegraphics[width=\textwidth,page=1]{carte_diffusion_2008.png}
+	\onslide<3> \includegraphics[width=\textwidth]{carte_2011-2012.png}
+	\onslide<4> \includegraphics[width=\textwidth,page=2]{OUT_graph_4-c-2-evolution-etape-ppb__dynamique-relation-reseau_without_MLN}
+	\end{overprint}
+	\end{center}
+
+	\end{column}
+\end{columns}
+
+\end{frame}
